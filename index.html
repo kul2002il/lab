@@ -22,10 +22,10 @@
 			</div>
 
 			<div class="title_work">
-				Отчет по лабораторно-практической работе №3.1<br/>
+				Отчет по лабораторно-практической работе №1<br/>
 				учебной дисциплины<br/>
-				МДК. 09.02 “Проектирование, разработка и оптимизация веб-приложений”<br/>
-				Тема: «Исследование способов ускорения загрузки сайтов»
+				МДК. 09.02 “Обеспечение безопасности веб-приложений”<br/>
+				Тема: «Сбор информации о веб-приложении»
 			</div>
 
 			<div class="signature">
@@ -38,7 +38,7 @@
 					<tr>
 						<td>Руководитель<br/>«__»________ 2021 г.</td>
 						<td>_________________</td>
-						<td>Пермяков В.В.</td>
+						<td>Истигечев С.С.</td>
 					</tr>
 				</table>
 			</div>
@@ -57,21 +57,248 @@
 
 			<h3>Цель</h3>
 			<p>
-				Научиться основным способам тестирования веб-приложений
+				Целью лабораторной работы является обучение методам
+				и средствам сбора информации об анализируемом веб-приложении. 
+			</p>
+
+			<h3>Задачи</h3>
+			<p>
+				Выполнить сбор информации об анализируемом веб-приложении
+				<a href="https://www.php.net/">https://www.php.net/</a>
 			</p>
 		</div>
 		
 		<div>
 			<h2>Ход работы</h2>
 
+			<h3>1. Проанализировано содержимое файла robots.txt.</h3>
+
 			<div class="img">
-				<img src="img/1.png">
-				<p>Подпись</p>
+				<pre>
+User-agent: *
+Disallow: /backend/
+Disallow: /distributions/
+Disallow: /stats/
+Disallow: /server-status/
+Disallow: /search.php
+Disallow: /mod.php
+Disallow: /manual/add-note.php
+Disallow: /manual/vote-note.php
+
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self</pre>
+				<div>Файл robots.txt</div>
 			</div>
 
-			<h3>Задание 1</h3>
 			<p>
-				Просто текст.
+				Файл состоит из указаний для роботов поисковых движков.
+				Состоит из пар "Параметр: значение".
+			</p>
+			<p>
+				Судя по названию параметра "User-agent", он служит для указания
+				всем агентам выполнять определённые инструкции.
+				Т.к. данный параметр написан в самом начале,
+				то он либо настраивает сразу весь документ,
+				либо те инструкции, что указаны ниже него.
+			</p>
+
+			<p>
+				Инструкция "Disallow" служит для исключения из индексации
+				поисковыми движками. Например "Disallow: /search.php".
+				На данную страницу
+				(https://www.php.net/search.php)
+				Можно перейти и воспользоваться ей,
+				однако информация о данной странице не доступна поисковикам:
+			</p>
+			<div class="img">
+				<img src="img/1.png">
+				<div>Информация о странице недоступна поисковику</div>
+			</div>
+
+			<h3>2. Анализ  конфигурации политики междоменного взаимодействия</h3>
+			<div class="img">
+				<pre>&lt;cross-domain-policy xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://www.adobe.com/xml/schemas/PolicyFile.xsd&quot;&gt;
+	&lt;allow-access-from domain=&quot;*.php.net&quot;/&gt;
+	&lt;site-control permitted-cross-domain-policies=&quot;master-only&quot;/&gt;
+	&lt;allow-http-request-headers-from domain=&quot;*.php.net&quot; headers=&quot;*&quot; secure=&quot;true&quot;/&gt;
+&lt;/cross-domain-policy&gt;</pre>
+				<div>Файл crossdomain.xml</div>
+			</div>
+			<p>
+				Файл clientaccesspolicy.xml не найден
+				или недоступен для просмотра.
+			</p>
+			<p>Вывод: первый файл есть, второго нет.</p>
+
+			<h3>3. Анализ поисковыми запросами</h3>
+			<p>Были проведены следующие запросы:</p>
+			<ol>
+				<li>
+					site:www.php.net filetype:docx confidential
+					Результат: ничего не найдено.
+				</li>
+				<li>
+					site:www.php.net filetype:doc secret
+					Результат: ничего не найдено.
+				</li>
+				<li>
+					site:www.php.net inurl:admin
+					Результат:
+					<ol>
+						<li>
+							<a href="http://www.php.net/function.call-user-func-array:%7B/home/admin/web/dostavka-cvetov-52.ru/public-html/libraries/src/Cache/CacheController.php:71%7D">
+							PHP Function List</a>
+							- страница doesn't exist.
+						</li>
+						<li>
+							<a href="http://www.php.net/function.call-user-func-array:%7B/home/admin/web/dostavka-cvetov-52.ru/public-html/libraries/src/Cache/Controller/CallbackController.php:173%7D">
+							PHP Function List</a>
+							- страница doesn't exist.
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/ru/gender.example.admin.php">
+							Пример использования класса Gender.</a>
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/ru/varnish.example.admin.php">
+							Простое использование VarnishAdmin</a>
+							- страница иллюстрирует пример простого использования функциональности запрета
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/add-note.php?sect=gender.example.admin&redirect=https://www.php.net/manual/en/gender.example.admin.php">
+							Adding a note to the manual</a>
+							- страница добавления пользовательского примера в документацию.
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/vote-note.php?id=109918&page=varnish.example.admin&vote=up">
+							Голосование положительным голосом за пользовательский пример в документации</a>
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/vote-note.php?id=109918&page=varnish.example.admin&vote=down">
+							Голосование отрицательным голосом за пользовательский пример в документации</a>
+						</li>
+						<li>
+							<a href="http://www.php.net/function.call-user-func-array:%7B/home/admin.pk4u.kr/-Codeigniter/core/CodeIgniter.php:359%7D">
+							PHP Function List</a>
+							- страница doesn't exist.
+						</li>
+						<li>
+							<a href="https://www.php.net/manual/add-note.php?sect=varnish.example.admin&redirect=https://www.php.net/manual/en/varnish.example.admin.php">
+							Adding a note to the manual</a>
+							- страница добавления пользовательского примера в документацию.
+						</li>
+						<li>
+							<a href="https://www.php.net/wp-content/plugins/super-interactive-maps/sim-wp-admin/dacai.csv.php">
+							PHP Function List</a>
+							- страница doesn't exist.
+						</li>
+					</ol>
+					Вывод: страницы с адресом, включающем в себя подстроку
+					"admin" нет.
+				</li>
+				<li>
+					site:www.php.net filetype:sql
+					Результат: ничего не найдено.
+				</li>
+				<li>
+					site:www.php.net intext: "Access denied"
+					Результат: 10 страциц, из них нет страниц, что была вызвана системой при совершении какого-либо запроса роботом поискового движка.
+				</li>
+			</ol>
+
+			<h3>4. Определение ПО сервера</h3>
+			<p>
+				Server: myracloud
+			</p>
+
+			<h3>5. Определение IP адреса сервера</h3>
+			<p>
+				IPv4 адрес сервера: 185.85.0.29.
+				Дополнительных сайтов на данном IP не найдено.
+			</p>
+			<p>
+				Для анализа использовался ресурс
+				<a href="https://2ip.ru/">https://2ip.ru/</a>.
+			</p>
+
+			<h3>6. Кэшированные копии сайта</h3>
+			<div class="img">
+				<img src="img/2.png">
+				<div>Копия сайта 1998 года.</div>
+			</div>
+			<p>
+				Для просмотра использовался ресурс
+				<a href="waybackmachine.org">waybackmachine.org</a>.
+			</p>
+
+			<h3>7. Определение диапазона сети</h3>
+			<div class="img">
+				<pre>Domain Name: PHP.NET
+Registry Domain ID: 4701744_DOMAIN_NET-VRSN
+Registrar WHOIS Server: whois.tucows.com
+Registrar URL: http://tucowsdomains.com
+Updated Date: 2015-08-09T05:50:14
+Creation Date: 1997-11-18T05:00:00
+Registrar Registration Expiration Date: 2023-11-17T05:00:00
+Registrar: TUCOWS, INC.
+Registrar IANA ID: 69
+Reseller: easyDNS Technologies Inc.
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Registry Registrant ID: 
+Registrant Name: REDACTED FOR PRIVACY
+Registrant Organization: REDACTED FOR PRIVACY
+Registrant Street: REDACTED FOR PRIVACY
+Registrant City: REDACTED FOR PRIVACY
+Registrant State/Province: NC
+Registrant Postal Code: REDACTED FOR PRIVACY
+Registrant Country: US
+Registrant Phone: REDACTED FOR PRIVACY
+Registrant Phone Ext: 
+Registrant Fax: REDACTED FOR PRIVACY
+Registrant Fax Ext: 
+Registrant Email: https://tieredaccess.com/contact/ef61f442-d3f3-46ae-a588-8912c3d3b4e9
+Registry Admin ID: 
+Admin Name: REDACTED FOR PRIVACY
+Admin Organization: REDACTED FOR PRIVACY
+Admin Street: REDACTED FOR PRIVACY
+Admin City: REDACTED FOR PRIVACY
+Admin State/Province: REDACTED FOR PRIVACY
+Admin Postal Code: REDACTED FOR PRIVACY
+Admin Country: REDACTED FOR PRIVACY
+Admin Phone: REDACTED FOR PRIVACY
+Admin Phone Ext: 
+Admin Fax: REDACTED FOR PRIVACY
+Admin Fax Ext: 
+Admin Email: REDACTED FOR PRIVACY
+Registry Tech ID: 
+Tech Name: REDACTED FOR PRIVACY
+Tech Organization: REDACTED FOR PRIVACY
+Tech Street: REDACTED FOR PRIVACY
+Tech City: REDACTED FOR PRIVACY
+Tech State/Province: REDACTED FOR PRIVACY
+Tech Postal Code: REDACTED FOR PRIVACY
+Tech Country: REDACTED FOR PRIVACY
+Tech Phone: REDACTED FOR PRIVACY
+Tech Phone Ext: 
+Tech Fax: REDACTED FOR PRIVACY
+Tech Fax Ext: 
+Tech Email: REDACTED FOR PRIVACY
+Name Server: dns3.easydns.org
+Name Server: dns1.easydns.com
+Name Server: dns2.easydns.net
+Name Server: dns4.easydns.info
+DNSSEC: unsigned
+Registrar Abuse Contact Email: domainabuse@tucows.com
+Registrar Abuse Contact Phone: +1.4165350123
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/</pre>
+				<div>Информация о домене</div>
+			</div>
+			<p>
+				Для анализа использовался ресурс
+				<a href="https://www.reg.ru/whois/www.php.net">
+				www.reg.ru/whois</a>.
 			</p>
 		</div>
 
