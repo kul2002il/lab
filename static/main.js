@@ -88,7 +88,7 @@ function createTablesOfContents()
 	tablesOfContents.forEach((tableOfContents, key)=>
 	{
 		let nodesName = tableOfContents.getAttribute("data-index").split('/');
-		let selector = ":is(" + nodesName.join(',') + "):not(.ignoreIndex)";
+		let selector = nodesName.join(':not(.ignoreIndex),') + ":not(.ignoreIndex)";
 		let nodesElement = document.querySelectorAll(selector);
 		nodesElement.forEach((el, index)=>{
 			if(!el.id)
