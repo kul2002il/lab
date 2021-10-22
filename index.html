@@ -5,8 +5,85 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<script src="static/main.js" defer></script>
+	<style>
+	header {
+		display: table-header-group;
+	}
+	main {
+		display: table-row-group;
+	}
+	footer {
+		display: table-footer-group;
+	}
+	body{
+		border-right: 1mm solid black;
+		border-left: 1mm solid black;
+		counter-reset: section;
+		list-style-type: decimal;
+	}
+	header>*{
+		border-bottom: 1mm solid black;
+	}
+	footer>*{
+		font-size: 9pt;
+		border-top: 1mm solid black;
+		border-bottom: 1mm solid black;
+	}
+	footer table{
+		background-color: black;
+		width: calc(100% + 4px);
+		margin: -2px;
+	}
+	footer table td{
+		background-color: white;
+	}
+	.number-CP{
+		font-size: 19pt;
+	}
+	.number-page::after{
+		font-size: 16pt;
+		counter-increment: section;
+		content: counter(section);
+	}
+	</style>
 </head>
 <body>
+	<header>
+		<div>
+		</div>
+	</header>
+	<footer>
+		<div>
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td rowspan="3" class="number-CP">КП 190702.12.000 ПЗ</td>
+					<td>Лист</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td rowspan="2">
+						<span class="number-page"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>Изм.</td>
+					<td>Лист</td>
+					<td>№ докум.</td>
+					<td>Подпись</td>
+					<td>Дата</td>
+				</tr>
+			</table>
+		</div>
+	</footer>
 	<main>
 		<div class="title_page">
 			<div>
@@ -652,16 +729,6 @@
 			<h4>Редактирование профиля</h4>
 
 			<p>Входные данные:</p>
-
-			<p>Выходные данные:</p>
-
-			<p>Описание поведения:</p>
-
-
-			
-			<h4></h4>
-
-			<p>Входные данные:</p>
 			<ol>
 				<li>
 					Данные пользователя, которые необходимо изменить
@@ -687,8 +754,6 @@
 				</li>
 			</ol>
 
-
-			
 			<h4>Отправка сообщения</h4>
 
 			<p>Входные данные:</p>
@@ -738,16 +803,6 @@
 			</ol>
 
 			<p>Описание поведения:</p>
-
-
-			
-			<h4></h4>
-
-			<p>Входные данные:</p>
-
-			<p>Выходные данные:</p>
-
-			<p>Описание поведения:</p>
 			<ol>
 				<li>
 					Если пользователь не связан с аппаратом,
@@ -757,8 +812,6 @@
 					Предоставление информации по выбору выполненного ремонта
 				</li>
 			</ol>
-
-			
 
 			<h3>Описание функций заказчика</h3>
 
@@ -806,7 +859,6 @@
 			</ol>
 
 
-			
 			<h4>Написание отзыва о ремонте</h4>
 
 			<p>Входные данные:</p>
@@ -838,7 +890,6 @@
 			</ol>
 
 
-			
 			<h3>Описание функций мастера</h3>
 
 			<h4>Взятие аппарата на диагностику</h4>

@@ -136,6 +136,15 @@ ins{
 	margin: 1cm 1.5cm 1cm 3cm;
 }
 
+@media print{
+	a{
+		text-decoration: none;
+	}
+	:link {
+		color: inherit;
+	}
+}
+
 @media screen{
 	body{
 		background-color: #ddd;
