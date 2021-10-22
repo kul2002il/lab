@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="static/style.css">
 	<script src="static/main.js" defer></script>
 	<style>
+	@page{
+		size: A4; /*landscape*/
+		margin: 0.5cm 0.5cm 0.5cm 2cm;
+	}
 	header {
 		display: table-header-group;
 	}
@@ -22,9 +26,14 @@
 		list-style-type: decimal;
 	}
 	header>*{
-		border-bottom: 1mm solid black;
+		border-top: 1mm solid black;
+		height: 0.5cm;
 	}
-	footer>*{
+	footer>.spase-bottom
+	{
+		height: 0.5cm;
+	}
+	footer>.border{
 		font-size: 9pt;
 		border-top: 1mm solid black;
 		border-bottom: 1mm solid black;
@@ -46,6 +55,10 @@
 		counter-increment: section;
 		content: counter(section);
 	}
+	main > div{
+		margin-right: 1cm;
+		margin-left: 1cm;
+	}
 	</style>
 </head>
 <body>
@@ -54,7 +67,8 @@
 		</div>
 	</header>
 	<footer>
-		<div>
+		<div class="spase-bottom"></div>
+		<div class="border">
 			<table>
 				<tr>
 					<td></td>
