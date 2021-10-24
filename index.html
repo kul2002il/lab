@@ -4,7 +4,7 @@
 	<title>Практическая работа</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="static/style.css">
-	<script src="static/main.js" defer></script>
+	<script src="static/main.js"></script>
 	<style>
 	@page{
 		size: A4; /*landscape*/
@@ -22,16 +22,18 @@
 	body{
 		border-right: 1mm solid black;
 		border-left: 1mm solid black;
-		counter-reset: section;
-		list-style-type: decimal;
+		counter-reset: image;
 	}
-	header>*{
+	.border-header{
 		border-top: 1mm solid black;
 		height: 0.5cm;
 	}
 	footer>.spase-bottom
 	{
 		height: 0.5cm;
+	}
+	.border-footer{
+		border-top: 1mm solid black;
 	}
 	footer>.border{
 		font-size: 9pt;
@@ -50,57 +52,80 @@
 		font-size: 19pt;
 		text-align: center;
 	}
-	.number-page::after{
+	.number-page{
 		font-size: 16pt;
-		counter-increment: section;
-		content: counter(section);
 	}
 	main > div{
 		margin-right: 1cm;
 		margin-left: 1cm;
 	}
+	p{
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+	b, h1, h2, h3, h4, h5{
+		font-weight: inherit;
+		font-size: 14pt;
+	}
+	.layer
+	{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+	}
+	.layer-page
+	{
+		position: relative;
+	}
+	.number-page
+	{
+		position: absolute;
+		display: inline-block;
+		bottom: 10px;
+		right: 20px;
+		font-size: 16pt;
+	}
+	main>div
+	{
+		min-height: 200mm;
+	}
+	.img>div::before
+	{
+		counter-increment: image;
+		content: "Рисунок " counter(image) ". ";
+	}
+	section
+	{
+		page-break-after: always;
+	}
 	</style>
+	<script type="text/javascript">
+	layers.pager =
+	{
+		pages:
+		{
+			start: -1,
+			from: 3,
+			to: 34,
+		},
+		heightPage: '200mm',
+	};
+	</script>
 </head>
 <body>
+<section>
 	<header>
-		<div>
+		<div class="border-header">
 		</div>
 	</header>
 	<footer>
 		<div class="spase-bottom"></div>
-		<div class="border">
-			<table>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td rowspan="3" class="number-CP">КП 190702.12.000 ПЗ</td>
-					<td>Лист</td>
-				</tr>
-				<tr>
-					<td>&nbsp;</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td rowspan="2">
-						<span class="number-page"></span>
-					</td>
-				</tr>
-				<tr>
-					<td>Изм.</td>
-					<td>Лист</td>
-					<td>№ докум.</td>
-					<td>Подпись</td>
-					<td>Дата</td>
-				</tr>
-			</table>
-		</div>
+		<div class="border-footer"></div>
 	</footer>
 	<main>
 		<div class="title_page">
+			
 			<div>
 				ДЕПАРТАМЕНТ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ<br/>
 				ТОМСКОЙ ОБЛАСТИ<br/>
@@ -115,7 +140,8 @@
 
 			<div class="title_work">
 				Курсовой проект<br/>
-				КП.20.090207.472.01.ПЗ
+				КП.21.090207.482.10.ПЗ<br/>
+				«СОЗДАНИЕ САЙТА ДЛЯ КОМПАНИИ РЕПРОТЭК»
 			</div>
 
 			<div class="signature">
@@ -135,17 +161,165 @@
 
 			<div>Томск 2021</div><div></div>
 		</div>
-
+		<div></div>
+	</main>
+</section>
+<section>
+	<header>
+		<div class="border-header">
+		</div>
+	</header>
+	<footer>
+		<div class="spase-bottom"></div>
+		<div class="border">
+			<table>
+				<tr>
+					<td>&nbsp</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td rowspan="3" colspan="6" class="number-CP">
+						КП.21.090207.482.10.ПЗ
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="text-align: center;">Изм.</td>
+					<td style="text-align: center;">Лист</td>
+					<td style="text-align: center;">№ докум.</td>
+					<td style="text-align: center;">Подпись</td>
+					<td style="text-align: center;">Дата</td>
+				</tr>
+				<tr>
+					<td colspan="2">Разраб.</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					
+					<td rowspan="5">
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp&nbsp&nbsp&nbsp&nbsp
+					</td>
+					
+					<td colspan="3" style="text-align: center;">Лит.</td>
+					<td style="text-align: center;">Лист</td>
+					<td style="text-align: center;">Листов</td>
+				</tr>
+				<tr>
+					<td colspan="2">Провер.</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>2</td>
+					<td>35</td>
+				</tr>
+				<tr>
+					<td colspan="2">Реценз</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					
+					<td rowspan="3" colspan="5"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Н. Контр.</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td colspan="2">Утверд.</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+	<main>
 		<div>
 			<h2 class="ignoreIndex">Содержание</h2>
 			
-			<div data-index="h2/h3/h4/h5/h6"></div>
+			<div data-index="h2"></div>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 		</div>
-
+		<div></div>
+	</main>
+</section>
+<section>
+	<header>
+		<div class="border-header"></div>
+	</header>
+	<footer>
+		<div class="spase-bottom"></div>
+		<div class="border">
+			<table>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td rowspan="3" class="number-CP">КП.21.090207.482.10.ПЗ</td>
+					<td>Лист</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td rowspan="2">
+					</td>
+				</tr>
+				<tr>
+					<td>Изм.</td>
+					<td>Лист</td>
+					<td>№ докум.</td>
+					<td>Подпись</td>
+					<td>Дата</td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+	<main>
 		<div>
+			<div data-layer="pager">
+				<div class="number-page">{{pageNumber}}</div>
+			</div>
 			<h2>Введение</h2>
 
-			
 			<h3>Актуальность</h3>
 			<p>
 				Фирма РЕПРОТЭК занимается ремонтом сварочного и промышленного
@@ -1219,10 +1393,14 @@
 
 		<!--Диаграмма вариантов использования-->
 		<div>
-			<h2>Диаграмма вариантов использования</h2>
+			<h2>Диаграммы вариантов использования</h2>
 			<div class="img">
-				<img src="img/Диаграммы/use_case/TO-BE.svg">
-				<div>Диаграмма вариантов использования</div>
+				<img src="img/Диаграммы/use_case/TO-BE-1.svg">
+				<div>Диаграмма вариантов использования пользователей и мастеров</div>
+			</div>
+			<div class="img">
+				<img src="img/Диаграммы/use_case/TO-BE-2.svg">
+				<div>Диаграмма вариантов использования руководящего состава</div>
 			</div>
 		</div>
 
@@ -1244,6 +1422,81 @@
 			</div>
 		</div>
 
+		<!--Прототип интерфейса-->
+		<div>
+			<h2>Прототип интерфейса</h2>
+			
+			<h3>Главная</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Главная/1.png">
+				<div>Начало главной страницы</div>
+			</div>
+			<div class="img">
+				<img src="img/Интерфейс/Главная/2.png">
+				<div>Конец главной страницы</div>
+			</div>
+
+			<h3>Новости</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Новости.png">
+				<div>Страница новостей</div>
+			</div>
+
+			<h3>Контакты</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Контакты.png">
+				<div>Страница контактов</div>
+			</div>
+
+			<h3>Форма связи</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Связь.png">
+				<div>Страница формы связи</div>
+			</div>
+
+			<h3>О компании</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Онас.png">
+				<div>Страница о компании</div>
+			</div>
+
+			<h3>Вход</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Вход.png">
+				<div>Страница входа</div>
+			</div>
+
+			<h3>Регистрация</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Регистрация.png">
+				<div>Страница регистрации</div>
+			</div>
+
+			<h3>Заявка</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Заявка.png">
+				<div>Страница подачи заявки на ремонт</div>
+			</div>
+
+			<h3>Аппараты</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Аппараты.png">
+				<div>Страница аппаратов пользователя</div>
+			</div>
+
+			<h3>Ремонт</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Сообщения.png">
+				<div>Страница просмотра ремонта</div>
+			</div>
+
+			<h3>Ошибки</h3>
+			<div class="img">
+				<img src="img/Интерфейс/Error.png">
+				<div>Страница ошибок</div>
+			</div>
+		</div>
+
 
 		<div>
 			<h2>Заключение</h2>
@@ -1255,8 +1508,51 @@
 				Данное приложение является первой версией сайта и закладывает
 				основу для его развития.
 			</p>
+			<p>
+				Реализованный функционал:
+			</p>
+			<ol>
+				<li>
+					Просмотр информации о компании, её новостях и возможностях.
+				</li>
+				<li>
+					Хранение истории аппарата.
+				</li>
+				<li>
+					Диалог мастера и заказчика.
+				</li>
+				<li>
+					Подача заявки на ремонт аппарата.
+				</li>
+				<li>
+					Создание личного профиля пользователя.
+				</li>
+				<li>
+					Разграничение ролей пользователей.
+				</li>
+				<li>
+					Информация о ремонте по QR-коду на квитанции облаты
+					или на самом аппарате (клеится с согласия заказчика).
+				</li>
+			</ol>
+			<p>
+				Нереализованный функционал:
+			</p>
+			<ol>
+				<li>
+					Динамическое назначение мастера
+				</li>
+				<li>
+					Возможность дистанционной оплаты
+				</li>
+				<li>
+					Отслеживание статуса ремонта аппаратов
+				</li>
+				<li>
+					Отзывы о ремонте
+				</li>
+			</ol>
 		</div>
-
 
 
 		<div>
@@ -1274,8 +1570,27 @@
 					https://www.php.net — 
 					Официальная документация php.
 				</li>
+				<li>
+					https://developer.mozilla.org/ru/docs/Web/JavaScript —
+					MDN Web Docs.
+				</li>
+				<li>
+					https://learn.javascript.ru —
+					«Современный учебник JavaScript».
+				</li>
+				<li>
+					https://getbootstrap.com/docs/5.1/examples/ —
+					Официальные примеры использования Bootstrap 5.1.
+				</li>
+				<li>
+					http://htmlbook.ru —
+					Справочник HTML и CSS.
+				</li>
 			</ol>
 		</div>
+
+		<div></div>
 	</main>
+</section>
 </body>
 </html>

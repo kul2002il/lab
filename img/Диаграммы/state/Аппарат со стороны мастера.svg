@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="40cm" height="61cm" viewBox="-1 -201 799 1212" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="39cm" height="44cm" viewBox="19 -61 779 878" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Фон">
-    <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="391.45" cy="-170" rx="10" ry="10"/>
+    <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="76.05" cy="-50" rx="10" ry="10"/>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="391.45" cy="995" rx="15" ry="15"/>
-      <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="391.45" cy="995" rx="10" ry="10"/>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="55" cy="795" rx="15" ry="15"/>
+      <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="55" cy="795" rx="10" ry="10"/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="335.4" y="-100" width="112.1" height="36" rx="10" ry="10"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="391.45" y="-78.1">
-        <tspan x="391.45" y="-78.1">Поступивший</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="20" y="0" width="112.1" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="76.05" y="21.9">
+        <tspan x="76.05" y="21.9">Поступивший</tspan>
       </text>
     </g>
     <g>
-      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="0,-200 175.4,-200 187.4,-188 187.4,-118 0,-118 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 1; stroke: #000000" points="175.4,-200 175.4,-188 187.4,-188 "/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="7" y="-175.1">
-        <tspan x="7" y="-175.1">Субъект моделирования:</tspan>
-        <tspan xml:space="preserve" x="7" y="-159.1">  Заказ на ремонт</tspan>
-        <tspan x="7" y="-143.1">Точка зрения:</tspan>
-        <tspan xml:space="preserve" x="7" y="-127.1">  Мастер</tspan>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="600,-60 775.4,-60 787.4,-48 787.4,22 600,22 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 1; stroke: #000000" points="775.4,-60 775.4,-48 787.4,-48 "/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="607" y="-35.1">
+        <tspan x="607" y="-35.1">Субъект моделирования:</tspan>
+        <tspan xml:space="preserve" x="607" y="-19.1">  Заказ на ремонт</tspan>
+        <tspan x="607" y="-3.1">Точка зрения:</tspan>
+        <tspan xml:space="preserve" x="607" y="12.9">  Мастер</tspan>
       </text>
     </g>
     <g>
@@ -39,19 +39,20 @@
       </text>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.45,-158.995 391.45,-130.002 391.45,-130.002 391.45,-105.481 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,-113.245 391.45,-103.245 396.45,-113.245 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="76.05,-38.9946 76.05,-20.002 76.05,-20.002 76.05,-5.48141 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="71.05,-13.2453 76.05,-3.24535 81.05,-13.2453 "/>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.45,-62.9907 391.45,-32 391.45,-32 391.45,-5.48141 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,-13.2453 391.45,-3.24535 396.45,-13.2453 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="133.107,18 232.025,18 232.025,18 326.47,18 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="318.707,23 328.707,18 318.707,13 "/>
     </g>
     <g>
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.45,37.0093 391.45,68 391.45,68 391.45,94.5186 "/>
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,86.7547 391.45,96.7547 396.45,86.7547 "/>
     </g>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="-27.575">
-      <tspan x="394.45" y="-27.575">Договор о диагностике</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="232.024" y="-4.05">
+      <tspan x="232.024" y="-4.05">Договор</tspan>
+      <tspan x="232.024" y="11.95">о диагностике</tspan>
     </text>
     <g>
       <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="347.45" y="440" width="88" height="36" rx="10" ry="10"/>
@@ -60,10 +61,10 @@
       </text>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="160" y="780" width="112.7" height="52" rx="10" ry="10"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="216.35" y="801.9">
-        <tspan x="216.35" y="801.9">Отклонённый</tspan>
-        <tspan x="216.35" y="817.9">заказчиком</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="160" y="540" width="112.7" height="52" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="216.35" y="561.9">
+        <tspan x="216.35" y="561.9">Отклонённый</tspan>
+        <tspan x="216.35" y="577.9">заказчиком</tspan>
       </text>
     </g>
     <g>
@@ -71,17 +72,17 @@
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,426.755 391.45,436.755 396.45,426.755 "/>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="338.4,226 216.35,226 216.35,775.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="211.35,767.764 216.35,777.764 221.35,767.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="338.4,226 216.35,226 216.35,535.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="211.35,527.764 216.35,537.764 221.35,527.764 "/>
     </g>
     <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="394.425">
       <tspan x="394.45" y="394.425">Принятие</tspan>
       <tspan x="394.45" y="410.425">на ремонт</tspan>
     </text>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="219.35" y="491.425">
-      <tspan x="219.35" y="491.425">Отказ от</tspan>
-      <tspan x="219.35" y="507.425">ремонта</tspan>
-      <tspan x="219.35" y="523.425">или неоплата</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="219.35" y="371.425">
+      <tspan x="219.35" y="371.425">Отказ от</tspan>
+      <tspan x="219.35" y="387.425">ремонта</tspan>
+      <tspan x="219.35" y="403.425">или неоплата</tspan>
     </text>
     <g>
       <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="324.874" y="540" width="133.15" height="52" rx="10" ry="10"/>
@@ -107,19 +108,19 @@
       </text>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="351.45" y="900" width="80" height="36" rx="10" ry="10"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="391.45" y="921.9">
-        <tspan x="391.45" y="921.9">Рабочий</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="100" y="780" width="80" height="36" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="140" y="801.9">
+        <tspan x="140" y="801.9">Рабочий</tspan>
       </text>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.449,816 391.449,858 391.45,858 391.45,895.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,887.764 391.45,897.764 396.45,887.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="338.167,798 259.586,798 259.586,798 185.477,798 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="193.241,793 183.241,798 193.241,803 "/>
     </g>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="846.425">
-      <tspan x="394.45" y="846.425">Конец гарантии</tspan>
-      <tspan x="394.45" y="862.425">[С момента сдачи</tspan>
-      <tspan x="394.45" y="878.425">в работу&gt; 3 месяцев]</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="259.586" y="759.95">
+      <tspan x="259.586" y="759.95">Конец гарантии</tspan>
+      <tspan x="259.586" y="775.95">[С момента сдачи</tspan>
+      <tspan x="259.586" y="791.95">в работу&gt; 3 месяцев]</tspan>
     </text>
     <g>
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="443.724,798 521.862,798 521.862,798 595.528,798 "/>
@@ -131,12 +132,12 @@
     <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="512.427">
       <tspan x="394.45" y="512.427">Начало работ</tspan>
     </text>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.449" y="630.423">
-      <tspan x="394.449" y="630.423">Починка</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="630.423">
+      <tspan x="394.45" y="630.423">Починка</tspan>
     </text>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.449" y="734.425">
-      <tspan x="394.449" y="734.425">Успешная работа</tspan>
-      <tspan x="394.449" y="750.425">аппарата</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="734.425">
+      <tspan x="394.45" y="734.425">Успешная работа</tspan>
+      <tspan x="394.45" y="750.425">аппарата</tspan>
     </text>
     <g>
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="438.924,678 500,678 500,566 462.496,566 "/>
@@ -147,12 +148,12 @@
       <tspan x="503" y="634.425">дефект</tspan>
     </text>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.45,937 391.45,960 391.45,960 391.45,975.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,967.764 391.45,977.764 396.45,967.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="98.995,798 85.0014,798 85.0014,795 75.4799,795 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="83.2439,790 73.2439,795 83.2439,800 "/>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="216.35,833.005 216.35,960 391.45,960 391.45,975.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,967.764 391.45,977.764 396.45,967.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="216.35,593 216.35,640 55,640 55,775.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="50,767.764 55,777.764 60,767.764 "/>
     </g>
     <g>
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.45,477.009 391.45,508.001 391.449,508.001 391.449,534.521 "/>
@@ -202,24 +203,24 @@
       <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="456.736,221 446.736,226 456.736,231 "/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="20" y="780" width="112.7" height="52" rx="10" ry="10"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="76.35" y="801.9">
-        <tspan x="76.35" y="801.9">Отклонённый</tspan>
-        <tspan x="76.35" y="817.9">компанией</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="20" y="540" width="112.7" height="52" rx="10" ry="10"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="76.35" y="561.9">
+        <tspan x="76.35" y="561.9">Отклонённый</tspan>
+        <tspan x="76.35" y="577.9">компанией</tspan>
       </text>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="76.35,832 76.35,960 391.45,960 391.45,975.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="386.45,967.764 391.45,977.764 396.45,967.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="76.35,592 76.35,640 55,640 55,775.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="50,767.764 55,777.764 60,767.764 "/>
     </g>
     <g>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="300,118 76.35,118 76.35,775.528 "/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="71.35,767.764 76.35,777.764 81.35,767.764 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="300,118 76.35,118 76.35,535.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="71.35,527.764 76.35,537.764 81.35,527.764 "/>
     </g>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="79.35" y="437.425">
-      <tspan x="79.35" y="437.425">Отклонение</tspan>
-      <tspan x="79.35" y="453.425">ремонта</tspan>
-      <tspan x="79.35" y="469.425">мастером</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="79.35" y="317.425">
+      <tspan x="79.35" y="317.425">Отклонение</tspan>
+      <tspan x="79.35" y="333.425">ремонта</tspan>
+      <tspan x="79.35" y="349.425">мастером</tspan>
     </text>
     <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="503" y="394.425">
       <tspan x="503" y="394.425">Диагностированна</tspan>
@@ -243,8 +244,8 @@
       <tspan x="701.476" y="564.425">Диагностика</tspan>
       <tspan x="701.476" y="580.425">аппарата</tspan>
     </text>
-    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="172.239">
-      <tspan x="394.45" y="172.239">Согласие заказчика</tspan>
+    <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="394.45" y="172.426">
+      <tspan x="394.45" y="172.426">Согласие заказчика</tspan>
     </text>
   </g>
 </svg>

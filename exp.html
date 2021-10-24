@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="static/main.js"></script>
 <style>
 	body
 	{
@@ -33,11 +34,55 @@
 	.border
 	{
 		border: 10px solid black;
+	}/*
+	.layer
+	{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+		background-color: #ff000099;
+	}
+	.layer-page
+	{
+		background-color: #00ffff99;
+		position: relative;
+	}
+	.numberPage
+	{
+		position: absolute;
+		display: inline-block;
+		bottom: 10px;
+		right: 20px;
+		background-color: green;
+		page-break-after: always;
+	}*/
+	.layer
+	{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+	}
+	.layer-page
+	{
+		position: relative;
+	}
+	.numberPage
+	{
+		position: absolute;
+		display: inline-block;
+		bottom: 10px;
+		right: 20px;
+		background-color: green;
 	}
 </style>
 </head>
 <body>
 	<main>
+		<div data-layer="pager">
+			<div class="numberPage">{{pageNumber}}</div>
+		</div>
 		<div class="content">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Vulputate enim nulla aliquet porttitor lacus luctus accumsan. Facilisis magna etiam tempor orci eu lobortis elementum. Sem et tortor consequat id. Vitae justo eget magna fermentum iaculis eu. Velit dignissim sodales ut eu sem integer vitae justo eget. Mollis aliquam ut porttitor leo a diam. Suspendisse in est ante in. Duis convallis convallis tellus id interdum velit. Quam quisque id diam vel quam elementum pulvinar. Nibh venenatis cras sed felis eget. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum. Ac odio tempor orci dapibus ultrices in iaculis nunc. Mus mauris vitae ultricies leo integer. Facilisi etiam dignissim diam quis enim. Purus semper eget duis at tellus at urna condimentum. Id ornare arcu odio ut sem nulla pharetra diam. Est velit egestas dui id ornare arcu odio.
 	

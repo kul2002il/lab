@@ -103,4 +103,70 @@ function createTablesOfContents()
 	});
 }
 
-createTablesOfContents();
+document.addEventListener("DOMContentLoaded", createTablesOfContents);
+
+
+/*
+	Слои
+*/
+
+//Создание глобального объекта для настроек слоёв.
+let layers = {};
+
+let debug;
+
+function toNumberPage()
+{
+	let layersElements = document.querySelectorAll("[data-layer]");
+	layersElements.forEach(el=>{
+		let templatePage = el.innerHTML;
+		el.innerHTML = '';
+		
+		el.classList.add('layer');
+		
+		let layerData = layers[el.getAttribute('data-layer')];
+		for (let pageNumber = layerData.pages.start || 1; pageNumber <= layerData.pages.to; pageNumber++)
+		{
+			let page = document.createElement('div');
+			page.className = 'layer-page';
+			let content = document.createElement('div');
+			if(pageNumber >= layerData.pages.from)
+			{
+				let html = templatePage;
+				debug = html;
+				html = html.replace(/\{\{pageNumber\}\}/, pageNumber);
+				content.innerHTML = html;
+			}
+			page.append(content);
+			let hook = document.createElement('div');
+			hook.style.pageBreakBefore = 'always';
+			hook.style.height = '1px';
+			page.append(hook);
+			el.append(page);
+		}
+	});
+}
+
+document.addEventListener("DOMContentLoaded", toNumberPage);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

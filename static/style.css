@@ -140,7 +140,7 @@ ins{
 	a{
 		text-decoration: none;
 	}
-	:link {
+	:link, :visited {
 		color: inherit;
 	}
 }
