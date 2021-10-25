@@ -1,3 +1,33 @@
+<?php
+function read_folder($folder)
+{
+	$files = scandir($folder);
+	$out = [];
+	foreach($files as $file)
+	{
+		if ($file == '.' || $file == '..') continue;
+		$fullfilename = $folder . '/' . $file;
+		if (is_dir($fullfilename))
+			$out = array_merge($out, read_folder($fullfilename));
+			else
+				array_push($out, $fullfilename);
+	}
+	return $out;
+}
+
+$sources = read_folder("source");
+$files = [];
+foreach ($sources as $source)
+{
+	$matches = [];
+	preg_match('#^source/(.*)$#', $source, $matches);
+	$name = $matches[1];
+	$files = array_merge($files, [
+		$name => $source
+	]);
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,8 +50,6 @@
 		display: table-footer-group;
 	}
 	body{
-		border-right: 1mm solid black;
-		border-left: 1mm solid black;
 		counter-reset: image;
 	}
 	.border-header{
@@ -99,6 +127,16 @@
 	{
 		page-break-after: always;
 	}
+	section.border
+	{
+		border-right: 1mm solid black;
+		border-left: 1mm solid black;
+	}
+	pre
+	{
+		color: initial;
+		background-color: initial;
+	}
 	</style>
 	<script type="text/javascript">
 	layers.pager =
@@ -107,14 +145,22 @@
 		{
 			start: -1,
 			from: 3,
-			to: 34,
+			to: 29,
 		},
-		heightPage: '200mm',
+	};
+	layers.add1 =
+	{
+		pages:
+		{
+			start: -2,
+			from: 30,
+			to: 119,
+		},
 	};
 	</script>
 </head>
 <body>
-<section>
+<section class="border">
 	<header>
 		<div class="border-header">
 		</div>
@@ -164,7 +210,7 @@
 		<div></div>
 	</main>
 </section>
-<section>
+<section class="border">
 	<header>
 		<div class="border-header">
 		</div>
@@ -277,7 +323,7 @@
 		<div></div>
 	</main>
 </section>
-<section>
+<section class="border">
 	<header>
 		<div class="border-header"></div>
 	</header>
@@ -698,7 +744,6 @@
 				<li>Статьи</li>
 				<li>Информация о компании</li>
 				<li>Список выполняемых работ</li>
-				<li></li>
 			</ol>
 			<p>
 				Плюсы:
@@ -1016,8 +1061,7 @@
 					<ol>
 						<li>Шильдик</li>
 						<li>Лицевая часть блока</li>
-						<li>Фото неисправного блока
-							(если имеется доступ)</li>
+						<li>Фото неисправности</li>
 					</ol>
 				</li>
 				<li>Дополнительные фотографии</li>
@@ -1592,5 +1636,67 @@
 		<div></div>
 	</main>
 </section>
+<section class="addiction">
+	<header>
+		<div style="text-align: right; padding-right: 1cm;">
+			Приложение А
+		</div>
+	</header>
+	<footer>
+		<div>&nbspНомер</div>
+	</footer>
+	<main>
+		<div>
+			<div data-layer="add1">
+				<div class="number-page">{{pageNumber}}</div>
+			</div>
+			
+			<h2>Код системы</h2>
+			<?php
+			foreach ($files as $key => $val)
+			{
+				$code = file_get_contents($val);
+				$code = htmlspecialchars($code);
+				?>
+				<h3 style="text-align: center"><?=$key?></h3>
+				<pre><?=$code?></pre>
+				<?php
+			}
+			?>
+		</div>
+	</main>
+</section>
+<section class="addiction">
+	<header>
+		<div style="text-align: right; padding-right: 1cm;">
+			Приложение Б
+		</div>
+	</header>
+	<footer>
+		<div>&nbspНомер</div>
+	</footer>
+	<main>
+		<div>
+			Приложение
+		</div>
+		<div></div>
+	</main>
+</section>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
