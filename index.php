@@ -154,7 +154,7 @@ foreach ($sources as $source)
 		{
 			start: -2,
 			from: 30,
-			to: 119,
+			to: 121,
 		},
 	};
 	</script>
@@ -220,7 +220,7 @@ foreach ($sources as $source)
 		<div class="border">
 			<table>
 				<tr>
-					<td>&nbsp</td>
+					<td>&nbsp;</td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -250,9 +250,9 @@ foreach ($sources as $source)
 					<td></td>
 					
 					<td rowspan="5">
-						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-						&nbsp&nbsp&nbsp&nbsp&nbsp
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					</td>
 					
 					<td colspan="3" style="text-align: center;">Лит.</td>
@@ -269,7 +269,7 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 					<td>2</td>
-					<td>35</td>
+					<td>121</td>
 				</tr>
 				<tr>
 					<td colspan="2">Реценз</td>
@@ -296,29 +296,103 @@ foreach ($sources as $source)
 	</footer>
 	<main>
 		<div>
-			<h2 class="ignoreIndex">Содержание</h2>
+			<h3 class="ignoreIndex">Содержание</h3>
 			
-			<div data-index="h2"></div>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<!--<div data-index="h2/h3"></div> -->
+			<table style="width: 100%">
+				<tr>
+					<td>Введение</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>Основная часть</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>1. ТЕОРЕТИЧЕСКАЯ ЧАСТЬ</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>1.1 Анализ объекта</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>1.3 Обзор имеющихся решений</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>1.2 Анализ предмета</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>2. ПРАКТИЧЕСКАЯ ЧАСТЬ</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>2.1 Описание требований к системе</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>2.2 Описание требований к среде выполнения</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>2.3 Диаграмма вариантов использования</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>2.4 Диаграмма состояний</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>2.5 ER-диаграмма</td>
+					<td>21</td>
+				</tr>
+				<tr>
+					<td>2.6 Прототипы основных интерфейсов</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>ЗАКЛЮЧЕНИЕ</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td>Реализованный функционал</td>
+					<td>28</td>
+				</tr>
+				<tr>
+					<td>Список использованной литературы</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>Приложение А</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>Приложение Б</td>
+					<td>118</td>
+				</tr>
+			</table>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		</div>
 		<div></div>
 	</main>
@@ -497,8 +571,9 @@ foreach ($sources as $source)
 		
 		<!--Анализ объекта-->
 		<div>
-			<h2>Анализ объекта</h2>
-			<h3>История</h3>
+			<h2>ТЕОРЕТИЧЕСКАЯ ЧАСТЬ</h2>
+			<h3>Анализ объекта</h3>
+			<h4>История</h4>
 			<p>
 				До появления фирмы, ремонтом занимался один человек.
 				Заказчики представляли собой знакомых собственной деревни.
@@ -522,7 +597,7 @@ foreach ($sources as $source)
 				одноклассниках.
 			</p>
 
-			<h3>Состояние на данный момент</h3>
+			<h4>Состояние на данный момент</h4>
 			<p>
 				Описание текущего взаимодействия мастера с заказчиком:
 			</p>
@@ -574,7 +649,7 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h3>Текущие проблемы</h3>
+			<h4>Текущие проблемы</h4>
 			<ol>
 				<li>
 					Звонки принимает не только мастер, но и дополнительный
@@ -628,12 +703,12 @@ foreach ($sources as $source)
 
 		<!--Анализ конкурентов-->
 		<div>
-			<h2>Анализ сайтов конкурентов</h2>
-			<h3>
+			<h3>Анализ сайтов конкурентов</h3>
+			<h4>
 				<a href="https://promservice70.ru/">
 					ПРОМСЕРВИС ТСК
 				</a>
-			</h3>
+			</h4>
 			<p>
 				Вид деятельности:<br/>
 				Занимается ремонтом промышленного оборудования.
@@ -668,11 +743,11 @@ foreach ($sources as $source)
 					с заказчиком.
 				</li>
 			</ol>
-			<h3>
+			<h4>
 				<a href="https://www.galex.ru/services/sv/prom/">
 					GALEX
 				</a>
-			</h3>
+			</h4>
 			<p>
 				Вид деятельности:<br/>
 				Системная интеграция, поставка оборудования, сервисное
@@ -727,11 +802,11 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h3>
+			<h4>
 				<a href="https://www.remontservo.ru">
 					КЕРНЕЛ
 				</a>
-			</h3>
+			</h4>
 			<p>
 				Вид деятельности:<br/>
 				Сервисный центр.
@@ -775,8 +850,8 @@ foreach ($sources as $source)
 
 		<!--Анализ предмета-->
 		<div>
-			<h2>Анализ предмета</h2>
-			<h3>Объект</h3>
+			<h3>Анализ предмета</h3>
+			<h4>Объект</h4>
 			<p>
 				Оптимизация процесса информационного взаимодействия фирмы
 				РЕПРОТЭК с заказчиками, путём создания сайта.
@@ -784,7 +859,7 @@ foreach ($sources as $source)
 
 			<p>В целях поиска лучших решений был проведён анализ конкурентов.</p>
 
-			<h3>Будущий функционал</h3>
+			<h4>Будущий функционал</h4>
 			<ol>
 				<li>Интегрированный диалог c мастером</li>
 				<li>Динамическое назначение мастера</li>
@@ -796,7 +871,7 @@ foreach ($sources as $source)
 				<li>Отзывы о ремонте</li>
 			</ol>
 
-			<h3>Решение существующих проблем</h3>
+			<h4>Решение существующих проблем</h4>
 			<ol>
 				<li>
 					Благодаря дополнительному каналу связи будет разгружен
@@ -837,7 +912,7 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h3>Возможные проблемы</h3>
+			<h4>Возможные проблемы</h4>
 			<ol>
 				<li>
 					Необходимо обучение мастеров, что вводит дополнительные,
@@ -855,11 +930,12 @@ foreach ($sources as $source)
 
 		<!--Описание требований к системе-->
 		<div>
-			<h2>Описание требований к системе</h2>
+			<h2>ПРАКТИЧЕСКАЯ ЧАСТЬ</h2>
+			<h3>Описание требований к системе</h3>
 
-			<h3>Описание функций неавторизованного пользователя</h3>
+			<h4>Описание функций неавторизованного пользователя</h4>
 
-			<h4>Регистрация</h4>
+			<h5>Регистрация</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -890,7 +966,7 @@ foreach ($sources as $source)
 				<li>Изменения сохраняются в базе данных</li>
 			</ol>
 
-			<h4>Авторизация</h4>
+			<h5>Авторизация</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -922,7 +998,7 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h4>Просмотр отзывов</h4>
+			<h5>Просмотр отзывов</h5>
 
 			<p>Входные данные: —.</p>
 
@@ -940,7 +1016,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр информации о компании</h4>
+			<h5>Просмотр информации о компании</h5>
 
 			<p>Входные данные: —.</p>
 
@@ -958,9 +1034,9 @@ foreach ($sources as $source)
 
 
 
-			<h3>Описание функций авторизованного пользователя</h3>
+			<h4>Описание функций авторизованного пользователя</h4>
 			
-			<h4>Редактирование профиля</h4>
+			<h5>Редактирование профиля</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -988,7 +1064,7 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h4>Отправка сообщения</h4>
+			<h5>Отправка сообщения</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1027,7 +1103,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр статуса аппарата</h4>
+			<h5>Просмотр статуса аппарата</h5>
 
 			<p>Входные данные: —.</p>
 
@@ -1047,9 +1123,9 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
-			<h3>Описание функций заказчика</h3>
+			<h4>Описание функций заказчика</h4>
 
-			<h4>Подача заявки на ремонт</h4>
+			<h5>Подача заявки на ремонт</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1092,7 +1168,7 @@ foreach ($sources as $source)
 			</ol>
 
 
-			<h4>Написание отзыва о ремонте</h4>
+			<h5>Написание отзыва о ремонте</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1123,9 +1199,9 @@ foreach ($sources as $source)
 			</ol>
 
 
-			<h3>Описание функций мастера</h3>
+			<h4>Описание функций мастера</h4>
 
-			<h4>Взятие аппарата на диагностику</h4>
+			<h5>Взятие аппарата на диагностику</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1145,7 +1221,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр истории аппарата</h4>
+			<h5>Просмотр истории аппарата</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1166,9 +1242,9 @@ foreach ($sources as $source)
 
 
 			
-			<h3>Управляющий мастерами</h3>
+			<h4>Управляющий мастерами</h4>
 
-			<h4>Назначение мастера на диагностику аппарата</h4>
+			<h5>Назначение мастера на диагностику аппарата</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1202,7 +1278,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Назначение мастера на ремонт</h4>
+			<h5>Назначение мастера на ремонт</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1238,7 +1314,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр мастеров</h4>
+			<h5>Просмотр мастеров</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1263,7 +1339,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр мастера</h4>
+			<h5>Просмотр мастера</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1290,7 +1366,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр всех активных ремотнов</h4>
+			<h5>Просмотр всех активных ремотнов</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1315,7 +1391,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Просмотр ремонта</h4>
+			<h5>Просмотр ремонта</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1338,9 +1414,9 @@ foreach ($sources as $source)
 			</ol>
 
 
-			<h3>Описание функцианала администратора</h3>
+			<h4>Описание функцианала администратора</h4>
 			
-			<h4>Бан пользователей на отзывы</h4>
+			<h5>Бан пользователей на отзывы</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1368,7 +1444,7 @@ foreach ($sources as $source)
 
 
 			
-			<h4>Предоставление прав пользователям</h4>
+			<h5>Предоставление прав пользователям</h5>
 
 			<p>Входные данные:</p>
 			<ol>
@@ -1398,7 +1474,7 @@ foreach ($sources as $source)
 
 
 
-			<h3>Описание требований к системе</h3>
+			<h3>Описание требований к среде выполнения</h3>
 
 			<h4>Требования серверной части</h4>
 
@@ -1437,7 +1513,7 @@ foreach ($sources as $source)
 
 		<!--Диаграмма вариантов использования-->
 		<div>
-			<h2>Диаграммы вариантов использования</h2>
+			<h3>Диаграммы вариантов использования</h3>
 			<div class="img">
 				<img src="img/Диаграммы/use_case/TO-BE-1.svg">
 				<div>Диаграмма вариантов использования пользователей и мастеров</div>
@@ -1450,7 +1526,7 @@ foreach ($sources as $source)
 
 		<!--Диаграммы состояний-->
 		<div>
-			<h2>Диаграммы состояний</h2>
+			<h3>Диаграммы состояний</h3>
 			<div class="img">
 				<img src="img/Диаграммы/state/Аппарат со стороны мастера.svg">
 				<div>Диаграмма состояний ремонта</div>
@@ -1459,7 +1535,7 @@ foreach ($sources as $source)
 
 		<!--Диаграмма БД-->
 		<div>
-			<h2>Диаграмма базы данных</h2>
+			<h3>ER-диаграмма</h3>
 			<div class="img">
 				<img src="img/Диаграммы/BD/BD_v3.svg">
 				<div>Диаграмма базы данных</div>
@@ -1468,9 +1544,9 @@ foreach ($sources as $source)
 
 		<!--Прототип интерфейса-->
 		<div>
-			<h2>Прототип интерфейса</h2>
+			<h3>Прототипы основных интерфейсов</h3>
 			
-			<h3>Главная</h3>
+			<h4>Главная</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Главная/1.png">
 				<div>Начало главной страницы</div>
@@ -1480,61 +1556,61 @@ foreach ($sources as $source)
 				<div>Конец главной страницы</div>
 			</div>
 
-			<h3>Новости</h3>
+			<h4>Новости</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Новости.png">
 				<div>Страница новостей</div>
 			</div>
 
-			<h3>Контакты</h3>
+			<h4>Контакты</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Контакты.png">
 				<div>Страница контактов</div>
 			</div>
 
-			<h3>Форма связи</h3>
+			<h4>Форма связи</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Связь.png">
 				<div>Страница формы связи</div>
 			</div>
 
-			<h3>О компании</h3>
+			<h4>О компании</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Онас.png">
 				<div>Страница о компании</div>
 			</div>
 
-			<h3>Вход</h3>
+			<h4>Вход</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Вход.png">
 				<div>Страница входа</div>
 			</div>
 
-			<h3>Регистрация</h3>
+			<h4>Регистрация</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Регистрация.png">
 				<div>Страница регистрации</div>
 			</div>
 
-			<h3>Заявка</h3>
+			<h4>Заявка</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Заявка.png">
 				<div>Страница подачи заявки на ремонт</div>
 			</div>
 
-			<h3>Аппараты</h3>
+			<h4>Аппараты</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Аппараты.png">
 				<div>Страница аппаратов пользователя</div>
 			</div>
 
-			<h3>Ремонт</h3>
+			<h4>Ремонт</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Сообщения.png">
 				<div>Страница просмотра ремонта</div>
 			</div>
 
-			<h3>Ошибки</h3>
+			<h4>Ошибки</h4>
 			<div class="img">
 				<img src="img/Интерфейс/Error.png">
 				<div>Страница ошибок</div>
@@ -1543,7 +1619,7 @@ foreach ($sources as $source)
 
 
 		<div>
-			<h2>Заключение</h2>
+			<h2>ЗАКЛЮЧЕНИЕ</h2>
 			<p>
 				В ходе выполнения курсовой работы был разработан MVP —
 				веб-приложение для компании РЕПРОТЭК.
@@ -1552,8 +1628,10 @@ foreach ($sources as $source)
 				Данное приложение является первой версией сайта и закладывает
 				основу для его развития.
 			</p>
+			<h4>Реализованный функционал</h4>
 			<p>
-				Реализованный функционал:
+				В ходе выполнения курсовой работы был разработан следующий
+				функционал системы:
 			</p>
 			<ol>
 				<li>
@@ -1600,7 +1678,7 @@ foreach ($sources as $source)
 
 
 		<div>
-			<h2>Список использованной литературы</h2>
+			<h3>Список использованной литературы</h3>
 			<ol>
 				<li>
 					https://www.yiiframework.com/doc/guide/2.0/ru —
@@ -1643,7 +1721,7 @@ foreach ($sources as $source)
 		</div>
 	</header>
 	<footer>
-		<div>&nbspНомер</div>
+		<div>&nbsp;</div>
 	</footer>
 	<main>
 		<div>
@@ -1651,14 +1729,14 @@ foreach ($sources as $source)
 				<div class="number-page">{{pageNumber}}</div>
 			</div>
 			
-			<h2>Код системы</h2>
+			<h3>Код системы</h3>
 			<?php
 			foreach ($files as $key => $val)
 			{
 				$code = file_get_contents($val);
 				$code = htmlspecialchars($code);
 				?>
-				<h3 style="text-align: center"><?=$key?></h3>
+				<h4 style="text-align: center"><?=$key?></h4>
 				<pre><?=$code?></pre>
 				<?php
 			}
@@ -1673,11 +1751,114 @@ foreach ($sources as $source)
 		</div>
 	</header>
 	<footer>
-		<div>&nbspНомер</div>
+		<div>&nbsp;</div>
 	</footer>
 	<main>
 		<div>
-			Приложение
+			<h2>Руководство пользователя</h2>
+			<h3>Регистрация</h3>
+			<p>
+				Чтобы полноценно работать с сайтом необходимо зарегистрироваться.
+				Для этого нужно выполнить следующие шаги:
+			</p>
+			<p>
+				1. Перейти на сайт. Для примера приведена главная страница.
+			</p>
+			<div class="img">
+				<img src="img/help/Главная.png">
+				<div>Главная страница</div>
+			</div>
+			<p>
+				2. В верхнем правом углу нажать кнопку «Регистрация»
+			</p>
+			<p>
+				3. Ввести данные и нажать кнопку «Заренистрироваться»
+			</p>
+			<div class="img">
+				<img src="img/help/Регистрация.png">
+				<div>Форма регистрации</div>
+			</div>
+			<p>
+				4. При успешной регистрации произойдёт перенаправление
+				на страницу входа.
+				(Если возникли ошибки, то следуете инструкциям на экране.)
+				Для входа необходимо ввести электронную почту и пароль,
+				введённые при регистрации.
+			</p>
+			<div class="img">
+				<img src="img/help/Вход.png">
+				<div>Форма входа</div>
+			</div>
+			<p>
+				5. При правильном вводе данных произойдёт перенаправление
+				на главную страницу.
+			</p>
+			<div class="img">
+				<img src="img/help/Главная с пользователем.png">
+				<div>Главная страница с польлзователем</div>
+			</div>
+			<p>
+				6. При нажатии на имя пользователя открывается личный кабинет,
+				о котором рассказано ниже.
+				(В правом верхнем углу, на месте кнопки входа появилось имя
+				пользователя.)
+			</p>
+			<div class="img">
+				<img src="img/help/Нет аппаратов.png">
+				<div>Главная страница</div>
+			</div>
+			
+			<h3>Подача заявки</h3>
+			<p>
+				Одна из главных целей сайта — взаимодействие заказчиков
+				и мастеров в процессе ремонта аппарата.
+				Ключевая составляющая данного взаимодействия — подача заявки
+				на ремонт аппарата.
+				Для подачи заявки нужно выполнить следующие шаги:
+			</p>
+			<p>
+				1. Войти в профиль. (Алгоритм предложен выше.)
+			</p>
+			<div class="img">
+				<img src="img/help/Нет аппаратов.png">
+				<div>Главная страница</div>
+			</div>
+			<p>
+				2. Нажать на кнопку «Подать заявку» и заполнить предложенную
+				форму.
+				Если подаётся заявка на аппарат, который был создан ранее,
+				то его достаточно выбрать из списка «Мой аппарат».
+				При этом остальные поля ввода заполняются автоматически
+				и ввод в них блокируется.
+			</p>
+			<div class="img">
+				<img src="img/help/Подача заявки.png">
+				<div>Подача заявки</div>
+			</div>
+			<p>
+				3. При успешной подаче заявки произойдёт перенаправление
+				на страницу личного кабинета, в котором распологаются
+				все созданные пользователем аппараты и последняя информация
+				о ремонте.
+			</p>
+			<div class="img">
+				<img src="img/help/Ремонт в ЛК.png">
+				<div>Личный кабинет пользователя с созданным аппаратом</div>
+			</div>
+			<p>
+				4. При нажатии на заголовок аппарата происходит переход
+				на страницу ремонта аппарата, в котором происходит диалог
+				с мастером, обмен файлами, отслеживание статуса, просмотр
+				истории ремонта и прочее.
+				Например, для отправки сообщения нужно ввести текст в поле ввода
+				и нажать на кнопку отправки (стрелка вправо).
+			</p>
+			<div class="img">
+				<img src="img/help/Диалог.png">
+				<div>Диалог с мастером.</div>
+			</div>
+			<p>
+			
 		</div>
 		<div></div>
 	</main>
