@@ -114,6 +114,13 @@ foreach ($sources as $source)
 		right: 20px;
 		font-size: 16pt;
 	}
+    .top-right-page
+    {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        right: 1cm;
+    }
 	main>div
 	{
 		min-height: 200mm;
@@ -150,6 +157,8 @@ foreach ($sources as $source)
 	};
 	layers.add1 =
 	{
+	    add1: 30,
+        add2: 118,
 		pages:
 		{
 			start: -2,
@@ -1681,32 +1690,39 @@ foreach ($sources as $source)
 			<h3>Список использованной литературы</h3>
 			<ol>
 				<li>
-					https://www.yiiframework.com/doc/guide/2.0/ru —
-					Официальная документация Yii2.
+                    Официальная документация Yii2 [Электронный ресурс] URL:
+                    https://www.yiiframework.com/doc/guide/2.0/ru
+					(дата обращения: 20.10.2021)
 				</li>
 				<li>
-					https://yiiframework.com.ua/ru/doc/guide/2/ —
-					Документация Yii от сообщества.
+                    Документация Yii от сообщества [Электронный ресурс] URL:
+					https://yiiframework.com.ua/ru/doc/guide/2/
+                    (дата обращения: 20.10.2021)
 				</li>
 				<li>
-					https://www.php.net — 
-					Официальная документация php.
+                    Официальная документация php [Электронный ресурс] URL:
+					https://www.php.net
+                    (дата обращения: 20.10.2021)
 				</li>
 				<li>
-					https://developer.mozilla.org/ru/docs/Web/JavaScript —
-					MDN Web Docs.
+                    MDN Web Docs. [Электронный ресурс] URL:
+					https://developer.mozilla.org/ru/docs/Web/JavaScript
+                    (дата обращения: 20.10.2021)
 				</li>
 				<li>
-					https://learn.javascript.ru —
-					«Современный учебник JavaScript».
+                    «Современный учебник JavaScript». [Электронный ресурс] URL:
+					https://learn.javascript.ru
+                    (дата обращения: 20.10.2021)
 				</li>
 				<li>
-					https://getbootstrap.com/docs/5.1/examples/ —
-					Официальные примеры использования Bootstrap 5.1.
+                    Официальные примеры использования Bootstrap 5.1. [Электронный ресурс] URL:
+					https://getbootstrap.com/docs/5.1/examples/
+                    (дата обращения: 20.10.2021)
 				</li>
 				<li>
-					http://htmlbook.ru —
-					Справочник HTML и CSS.
+                    Справочник HTML и CSS. [Электронный ресурс] URL:
+					http://htmlbook.ru
+                    (дата обращения: 20.10.2021)
 				</li>
 			</ol>
 		</div>
@@ -1716,8 +1732,8 @@ foreach ($sources as $source)
 </section>
 <section class="addiction">
 	<header>
-		<div style="text-align: right; padding-right: 1cm;">
-			Приложение А
+		<div>
+            &nbsp;
 		</div>
 	</header>
 	<footer>
@@ -1746,8 +1762,8 @@ foreach ($sources as $source)
 </section>
 <section class="addiction">
 	<header>
-		<div style="text-align: right; padding-right: 1cm;">
-			Приложение Б
+		<div>
+            &nbsp;
 		</div>
 	</header>
 	<footer>

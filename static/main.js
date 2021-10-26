@@ -134,6 +134,34 @@ function toNumberPage()
 			{
 				let html = templatePage;
 				debug = html;
+				if(layerData.add1)
+				{
+					console.log('add');
+					if(pageNumber === layerData.add1)
+					{
+						console.log('addA1');
+						html = '<div class="top-right-page">Приложение А</div>' +
+							'<div class="number-page">{{pageNumber}}</div>';
+					}
+					if(pageNumber > layerData.add1)
+					{
+						console.log('addA2');
+						html = '<div class="top-right-page">Продолжение приложения А</div>' +
+							'<div class="number-page">{{pageNumber}}</div>';
+					}
+					if(pageNumber === layerData.add2)
+					{
+						console.log('addB1');
+						html = '<div class="top-right-page">Приложение Б</div>' +
+							'<div class="number-page">{{pageNumber}}</div>';
+					}
+					if(pageNumber > layerData.add2)
+					{
+						console.log('addB2');
+						html = '<div class="top-right-page">Продолжение приложения Б</div>' +
+							'<div class="number-page">{{pageNumber}}</div>';
+					}
+				}
 				html = html.replace(/\{\{pageNumber\}\}/, pageNumber);
 				content.innerHTML = html;
 			}
