@@ -238,16 +238,20 @@
 							sqli/example2.php?name=root and 1=1
 						</td>
 						<td>
+							ERROR NO SPACE
+							(Нет таблицы.)
 						</td>
 						<td>
-							↓
+							То же, но с проверкой на символ пробела.
 						</td>
 					</tr>
 					<tr>
 						<td>
 							sqli/example2.php?name=root'%09and%09'1'='1
+							(%09 — табулция)
 						</td>
 						<td>
+							2/root/30
 						</td>
 						<td>
 							↓
@@ -256,8 +260,10 @@
 					<tr>
 						<td>
 							sqli/example2.php?name=root'%09and%09'1'='2
+							(%09 — табулция)
 						</td>
 						<td>
+							Пустая таблица
 						</td>
 						<td>
 							↓
@@ -266,8 +272,164 @@
 					<tr>
 						<td>
 							sqli/example2.php?name=root'%2b%2b'
+							(%2b — +)
 						</td>
 						<td>
+							1/admin/10,<br>
+							2/root/30,<br>
+							3/user1/5,<br>
+							5/user2/2
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+				</table>
+				<div>Запросы и их результаты</div>
+			</div>
+
+			<h3>Шаг 4</h3>
+			<div class="img">
+				<table class="lined-table">
+					<tr>
+						<th>GET Запрос</th>
+						<th>Результат(id/name/age)</th>
+						<th>Предполагаемый запрос SQL</th>
+					</tr>
+					<tr>
+						<td>
+							sqli/example3.php?name=root
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							SELECT id, name, age FROM users WHERE name = '$name';
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example3.php?name=root and 1=1
+						</td>
+						<td>
+							ERROR NO SPACE
+						</td>
+						<td>
+							То же, но с проверкой на символ пробела.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example3.php?name=root'/**/and/**/'1'='1
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example3.php?name=root'/**/and/**/'1'='2
+						</td>
+						<td>
+							Пустая таблица
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example3.php?name=root'%2b%2b'
+							(%2b — +)
+						</td>
+						<td>
+							1/admin/10,<br>
+							2/root/30,<br>
+							3/user1/5,<br>
+							5/user2/2
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+				</table>
+				<div>Запросы и их результаты</div>
+			</div>
+
+			<h3>Шаг 5</h3>
+			<div class="img">
+				<table class="lined-table">
+					<tr>
+						<th>GET Запрос</th>
+						<th>Результат(id/name/age)</th>
+						<th>Предполагаемый запрос SQL</th>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=2
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							SELECT id, name, age FROM users WHERE id = $id;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=2'
+						</td>
+						<td>
+							Нет таблицы.
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=2"
+						</td>
+						<td>
+							Нет таблицы.
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=1%2b1
+							(%2b — +)
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=0%2b2
+							(%2b — +)
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							↓
+						</td>
+					</tr>
+					<tr>
+						<td>
+							sqli/example4.php?id=3-1
+						</td>
+						<td>
+							2/root/30
 						</td>
 						<td>
 							↓
@@ -287,7 +449,17 @@
 					</tr>
 					<tr>
 						<td>
-							sqli/example1.php?name=root
+							sqli/example2.php?id=2
+						</td>
+						<td>
+							2/root/30
+						</td>
+						<td>
+							SELECT id, name, age FROM users WHERE id = $id;
+						</td>
+					</tr>
+					<tr>
+						<td>
 						</td>
 						<td>
 						</td>
