@@ -152,18 +152,18 @@ foreach ($sources as $source)
 		{
 			start: -1,
 			from: 3,
-			to: 29,
+			to: 18,
 		},
 	};
 	layers.add1 =
 	{
-		add1: 30,
-		add2: 118,
+		add1: 19,
+		add2: 116,
 		pages:
 		{
 			start: -2,
-			from: 30,
-			to: 121,
+			from: 19,
+			to: 117,
 		},
 	};
 	</script>
@@ -277,7 +277,7 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 					<td>2</td>
-					<td>121</td>
+					<td>116</td>
 				</tr>
 				<tr>
 					<td colspan="2">Реценз</td>
@@ -310,67 +310,59 @@ foreach ($sources as $source)
 			<table style="width: 100%">
 				<tr>
 					<td>Введение</td>
-					<td>?</td>
+					<td>3</td>
 				</tr>
 				<tr>
 					<td>1. ОБЩАЯ ЧАСТЬ</td>
-					<td>?</td>
+					<td>6</td>
 				</tr>
 				<tr>
 					<td>1.1 Анализ предметной области</td>
-					<td>?</td>
+					<td>6</td>
 				</tr>
 				<tr>
 					<td>1.2 Выбор средств и сред разработки</td>
-					<td>?</td>
+					<td>7</td>
 				</tr>
 				<tr>
 					<td>2. СПЕЦИАЛЬНАЯ ЧАСТЬ</td>
-					<td>10</td>
+					<td>8</td>
 				</tr>
 				<tr>
 					<td>2.1 Описание требований к информационной системе</td>
-					<td>10</td>
+					<td>8</td>
 				</tr>
 				<tr>
 					<td>2.2 Диаграмма вариантов использования</td>
-					<td>18</td>
+					<td>13</td>
 				</tr>
 				<tr>
 					<td>2.3 Диаграмма состояний</td>
-					<td>20</td>
+					<td>14</td>
 				</tr>
 				<tr>
 					<td>2.4 Схема данных</td>
-					<td>21</td>
+					<td>15</td>
 				</tr>
 				<tr>
-					<td>2.5 Пользовательские сценарии</td>
-					<td>21</td>
-				</tr>
-				<tr>
-					<td>2.6 Прототипы основных интерфейсов</td>
-					<td>22</td>
+					<td>2.6 Описание API</td>
+					<td>16</td>
 				</tr>
 				<tr>
 					<td>ЗАКЛЮЧЕНИЕ</td>
-					<td>28</td>
-				</tr>
-				<tr>
-					<td>Реализованный функционал</td>
-					<td>28</td>
+					<td>17</td>
 				</tr>
 				<tr>
 					<td>Перечень используемых источников</td>
-					<td>29</td>
+					<td>18</td>
 				</tr>
 				<tr>
 					<td>Приложение А. Листинг программы</td>
-					<td>30</td>
+					<td>19</td>
 				</tr>
 				<tr>
 					<td>Приложение Б. Инструкция пользователя</td>
-					<td>118</td>
+					<td>114</td>
 				</tr>
 			</table>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
