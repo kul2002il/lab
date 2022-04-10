@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="52cm" height="50cm" viewBox="-265 559 1030 992" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Фон">
+    <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="-99.6" cy="570" rx="10" ry="10"/>
+    <g>
+      <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="600,560 752.3,560 764.3,572 764.3,626 600,626 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 1; stroke: #000000" points="752.3,560 752.3,572 764.3,572 "/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="607" y="584.881">
+        <tspan x="607" y="584.881">Диаграмма состояния</tspan>
+        <tspan x="607" y="600.881">SPA-приложения для</tspan>
+        <tspan x="607" y="616.881">работы с токенами</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-163.1" y="800" width="127" height="36" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.6" y="821.881">
+        <tspan x="-99.6" y="821.881">Не авторизован</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-152.225" y="1340" width="106.4" height="36" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.025" y="1361.88">
+        <tspan x="-99.025" y="1361.88">Авторизован</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-155.625" y="900" width="113.2" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.025" y="921.881">
+        <tspan x="-99.025" y="921.881">Ввод данных</tspan>
+        <tspan x="-99.025" y="937.881">пользователя</tspan>
+      </text>
+    </g>
+    <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-119.025,1140 -99.025,1120 -79.025,1140 -99.025,1160 "/>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="140.771" y="1000" width="146.2" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="213.871" y="1021.88">
+        <tspan x="213.871" y="1021.88">Ожидание данных</tspan>
+        <tspan x="213.871" y="1037.88">для токена</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="171.6" y="1140" width="84.95" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="214.075" y="1161.88">
+        <tspan x="214.075" y="1161.88">Отправка</tspan>
+        <tspan x="214.075" y="1177.88">запроса</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-141.5" y="1020" width="84.95" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.025" y="1041.88">
+        <tspan x="-99.025" y="1041.88">Отправка</tspan>
+        <tspan x="-99.025" y="1057.88">запроса</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="171.675" y="900" width="84.8" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="214.075" y="921.881">
+        <tspan x="214.075" y="921.881">Создание</tspan>
+        <tspan x="214.075" y="937.881">токена</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="356.8" y="1080" width="94.55" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="404.075" y="1101.88">
+        <tspan x="404.075" y="1101.88">Изменение</tspan>
+        <tspan x="404.075" y="1117.88">токена</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="540" y="1080" width="136.2" height="36" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="608.1" y="1101.88">
+        <tspan x="608.1" y="1101.88">Удаление токена</tspan>
+      </text>
+    </g>
+    <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="384.075,820 404.075,800 424.075,820 404.075,840 "/>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="330.747" y="1160" width="146.2" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="403.847" y="1181.88">
+        <tspan x="403.847" y="1181.88">Ожидание данных</tspan>
+        <tspan x="403.847" y="1197.88">для токена</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="361.6" y="1280" width="84.95" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="404.075" y="1301.88">
+        <tspan x="404.075" y="1301.88">Отправка</tspan>
+        <tspan x="404.075" y="1317.88">запроса</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="460" y="900" width="80" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="500" y="921.881">
+        <tspan x="500" y="921.881">Выбор</tspan>
+        <tspan x="500" y="937.881">токена</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="565.625" y="1180" width="84.95" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="608.1" y="1201.88">
+        <tspan x="608.1" y="1201.88">Отправка</tspan>
+        <tspan x="608.1" y="1217.88">запроса</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="404.075" cy="1535" rx="15" ry="15"/>
+      <ellipse style="fill: #000000; fill-opacity: 1; stroke: none" cx="404.075" cy="1535" rx="10" ry="10"/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-3.1" y="1020" width="87.25" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="40.525" y="1041.88">
+        <tspan x="40.525" y="1041.88">Неверные</tspan>
+        <tspan x="40.525" y="1057.88">данные</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-143.125" y="1220" width="88.2" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.025" y="1241.88">
+        <tspan x="-99.025" y="1241.88">Совершён</tspan>
+        <tspan x="-99.025" y="1257.88">вход</tspan>
+      </text>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.6,581.005 -99.6,600.503 -99.6,600.503 -99.6,615.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.6,607.764 -99.6,617.764 -94.6,607.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.6,837.009 -99.6,868.001 -99.025,868.001 -99.025,894.521 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.025,886.757 -99.025,896.757 -94.025,886.757 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.025,953.007 -99.025,986 -99.025,986 -99.025,1014.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.025,1006.76 -99.025,1016.76 -94.025,1006.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.025,1073.01 -99.025,1096.5 -99.025,1096.5 -99.025,1115.53 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.025,1107.76 -99.025,1117.76 -94.025,1107.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.025,1160 -99.025,1189.5 -99.025,1189.5 -99.025,1214.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.025,1206.76 -99.025,1216.76 -94.025,1206.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-79.025,1140 40.525,1140 40.525,1076.47 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="45.525,1084.24 40.525,1074.24 35.525,1084.24 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="40.525,1020 40.525,818 -31.6279,818 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-23.8639,813 -33.8639,818 -23.8639,823 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.025,1272 -99.025,1305.5 -99.025,1305.5 -99.025,1334.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.025,1326.75 -99.025,1336.75 -94.025,1326.75 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-45.825,1358 120,1358 120,760 404.075,760 404.075,795.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="399.075,787.764 404.075,797.764 409.075,787.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="424.075,820 500,820 500,895.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="495,887.764 500,897.764 505,887.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="384.075,820 214.075,820 214.075,895.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="209.075,887.764 214.075,897.764 219.075,887.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="214.075,953.007 214.075,976 213.871,976 213.871,994.521 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="208.871,986.757 213.871,996.757 218.871,986.757 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="213.871,1053.01 213.871,1096 214.075,1096 214.075,1134.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="209.075,1126.76 214.075,1136.76 219.075,1126.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="404.075,1133.01 404.075,1146 403.847,1146 403.847,1154.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="398.847,1146.76 403.847,1156.76 408.847,1146.76 "/>
+    </g>
+    <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="480,1000 500,980 520,1000 500,1020 "/>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="500,953.007 500,966.503 500,966.503 500,975.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="495,967.764 500,977.764 505,967.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="480,1000 404.075,1000 404.075,1075.53 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="399.075,1067.76 404.075,1077.76 409.075,1067.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="520,1000 608.1,1000 608.1,1075.53 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="603.1,1067.76 608.1,1077.76 613.1,1067.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="608.1,1117.01 608.1,1148 608.1,1148 608.1,1174.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="603.1,1166.76 608.1,1176.76 613.1,1166.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="403.847,1213.01 403.847,1246 404.075,1246 404.075,1274.52 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="399.075,1266.76 404.075,1276.76 409.075,1266.76 "/>
+    </g>
+    <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="384.075,1420 404.075,1400 424.075,1420 404.075,1440 "/>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="404.075,1333.01 404.075,1360 404.075,1360 404.075,1395.53 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="399.075,1387.76 404.075,1397.76 409.075,1387.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="608.1,1232 608.1,1360 408.547,1360 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="416.311,1355 406.311,1360 416.311,1365 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="214.075,1193 214.075,1360 399.603,1360 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="391.839,1365 401.839,1360 391.839,1355 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="404.075,1440 404.075,1480 404.075,1480 404.075,1515.53 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="399.075,1507.76 404.075,1517.76 409.075,1507.76 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="424.075,1420 740,1420 740,780 408.547,780 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="416.311,775 406.311,780 416.311,785 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.3125" y="872.433">
+      <tspan x="-95.3125" y="872.433">Переход ко входу</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.025" y="990.431">
+      <tspan x="-95.025" y="990.431">Данные введены</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.025" y="1193.93">
+      <tspan x="-95.025" y="1193.93">Сервер выдал токен</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-19.25" y="1116.98">
+      <tspan x="-19.25" y="1116.98">Сервер</tspan>
+      <tspan x="-19.25" y="1132.98">не выдал токен</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.025" y="1301.93">
+      <tspan x="-95.025" y="1301.93">Токен сохранён</tspan>
+      <tspan x="-95.025" y="1317.93">в приложении</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="218.075" y="856.431">
+      <tspan x="218.075" y="856.431">Выбор действия</tspan>
+      <tspan x="218.075" y="872.431">создание токена</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="504" y="848.245">
+      <tspan x="504" y="848.245">Выбор</tspan>
+      <tspan x="504" y="864.245">существующего</tspan>
+      <tspan x="504" y="880.245">токена</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="408.075" y="1036.24">
+      <tspan x="408.075" y="1036.24">Выбор действия</tspan>
+      <tspan x="408.075" y="1052.24">изменение токена</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="612.1" y="1036.24">
+      <tspan x="612.1" y="1036.24">Выбор действия</tspan>
+      <tspan x="612.1" y="1052.24">удаление токена</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="612.1" y="1144.43">
+      <tspan x="612.1" y="1144.43">Подтверждение</tspan>
+      <tspan x="612.1" y="1160.43">удаления</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="217.973" y="1092.43">
+      <tspan x="217.973" y="1092.43">Ввод данных</tspan>
+      <tspan x="217.973" y="1108.43">пользователем</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="407.961" y="1242.43">
+      <tspan x="407.961" y="1242.43">Ввод данных</tspan>
+      <tspan x="407.961" y="1258.43">пользователем</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="408.075" y="1468.43">
+      <tspan x="408.075" y="1468.43">Пользователь</tspan>
+      <tspan x="408.075" y="1484.43">завершает</tspan>
+      <tspan x="408.075" y="1500.43">работу</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="582.038" y="1412.98">
+      <tspan x="582.038" y="1412.98">Пользователь продолжает работу</tspan>
+    </text>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x="-140" y="620" width="80.8" height="52" rx="10" ry="10"/>
+      <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-99.6" y="641.881">
+        <tspan x="-99.6" y="641.881">Загрузка</tspan>
+        <tspan x="-99.6" y="657.881">токена</tspan>
+      </text>
+    </g>
+    <polygon style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" fill-rule="evenodd" points="-119.6,720 -99.6,700 -79.6,720 -99.6,740 "/>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.6,673.007 -99.6,686.503 -99.6,686.503 -99.6,695.528 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.6,687.764 -99.6,697.764 -94.6,687.764 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-99.6,740 -99.6,769.495 -99.6,769.495 -99.6,794.519 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-104.6,786.755 -99.6,796.755 -94.6,786.755 "/>
+    </g>
+    <g>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-119.6,720 -263.1,720 -263.1,1358 -156.697,1358 "/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="-164.461,1363 -154.461,1358 -164.461,1353 "/>
+    </g>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-191.35" y="696.981">
+      <tspan x="-191.35" y="696.981">Токен существует</tspan>
+      <tspan x="-191.35" y="712.981">и успешно загружен</tspan>
+    </text>
+    <text font-size="12.7998" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.6" y="765.927">
+      <tspan x="-95.6" y="765.927">Токен не найден</tspan>
+      <tspan x="-95.6" y="781.927">или недействителен</tspan>
+    </text>
+  </g>
+</svg>
