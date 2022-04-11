@@ -51,6 +51,7 @@ foreach ($sources as $source)
 	}
 	body{
 		counter-reset: image;
+		counter-reset: code;
 	}
 	.border-header{
 		border-top: 1mm solid black;
@@ -125,10 +126,15 @@ foreach ($sources as $source)
 	{
 		min-height: 200mm;
 	}
-	.img>div::before
+	.img-label::before
 	{
 		counter-increment: image;
 		content: "Рисунок " counter(image) ". ";
+	}
+	.code-label::before
+	{
+		counter-increment: code;
+		content: "Listing " counter(code) ". ";
 	}
 	section
 	{
@@ -143,6 +149,7 @@ foreach ($sources as $source)
 	{
 		color: initial;
 		background-color: initial;
+		border: 1px solid black;
 	}
 	</style>
 	<script type="text/javascript">
@@ -152,18 +159,18 @@ foreach ($sources as $source)
 		{
 			start: -1,
 			from: 3,
-			to: 18,
+			to: 26,
 		},
 	};
 	layers.add1 =
 	{
-		add1: 19,
-		add2: 116,
+		add1: 27,
+		add2: 124,
 		pages:
 		{
 			start: -2,
-			from: 19,
-			to: 117,
+			from: 27,
+			to: 131,
 		},
 	};
 	</script>
@@ -257,10 +264,11 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 
-					<td rowspan="5">
+					<td rowspan="5" class="number-CP"><!--
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> -->
+						Пояснительная записка
 					</td>
 
 					<td colspan="3" style="text-align: center;">Лит.</td>
@@ -277,7 +285,7 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 					<td>2</td>
-					<td>116</td>
+					<td>131</td>
 				</tr>
 				<tr>
 					<td colspan="2">Реценз</td>
@@ -285,7 +293,7 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 
-					<td rowspan="3" colspan="5"></td>
+					<td rowspan="3" colspan="5" class="number-CP">ТТИТ 482 гр.</td>
 				</tr>
 				<tr>
 					<td colspan="2">Н. Контр.</td>
@@ -322,47 +330,47 @@ foreach ($sources as $source)
 				</tr>
 				<tr>
 					<td>1.2 Выбор средств и сред разработки</td>
-					<td>7</td>
+					<td>8</td>
 				</tr>
 				<tr>
 					<td>2. СПЕЦИАЛЬНАЯ ЧАСТЬ</td>
-					<td>8</td>
+					<td>9</td>
 				</tr>
 				<tr>
 					<td>2.1 Описание требований к информационной системе</td>
-					<td>8</td>
+					<td>9</td>
 				</tr>
 				<tr>
 					<td>2.2 Диаграмма вариантов использования</td>
-					<td>13</td>
-				</tr>
-				<tr>
-					<td>2.3 Диаграмма состояний</td>
 					<td>14</td>
 				</tr>
 				<tr>
-					<td>2.4 Схема данных</td>
+					<td>2.3 Диаграмма состояний</td>
 					<td>15</td>
 				</tr>
 				<tr>
-					<td>2.6 Описание API</td>
+					<td>2.4 Схема данных</td>
 					<td>16</td>
 				</tr>
 				<tr>
-					<td>ЗАКЛЮЧЕНИЕ</td>
+					<td>2.6 Описание API</td>
 					<td>17</td>
 				</tr>
 				<tr>
+					<td>ЗАКЛЮЧЕНИЕ</td>
+					<td>25</td>
+				</tr>
+				<tr>
 					<td>Перечень используемых источников</td>
-					<td>18</td>
+					<td>26</td>
 				</tr>
 				<tr>
 					<td>Приложение А. Листинг программы</td>
-					<td>19</td>
+					<td>27</td>
 				</tr>
 				<tr>
 					<td>Приложение Б. Инструкция пользователя</td>
-					<td>114</td>
+					<td>124</td>
 				</tr>
 			</table>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -554,9 +562,54 @@ foreach ($sources as $source)
 			<h2>ОБЩАЯ ЧАСТЬ</h2>
 			<h3>Анализ предметной области</h3>
 			<p>
-				ж
+				В компании Томсксофт имеется множество сотрудников.
+				Для учёта рабочего процесса и времени которых применяется внутренняя
+				intranet-система.
 			</p>
 			<p>
+				Данная система разработана для
+			</p>
+			<ol>
+				<li>Размещения внутрикорпоративной информации</li>
+				<li>Автоматизированной рассылки данных</li>
+				<li>Оповещения сотрудников посредством электронной почты</li>
+				<li>Размещение файлов</li>
+				<li>Хранение учётных данных внешних корпоративных сервисов (логины и пароли)</li>
+				<li>Предупреждение коллег о изменении рабочего времени</li>
+				<li>Ведение информации о проектах</li>
+				<li>Ведение информации о запланированной и проделанной работе</li>
+			</ol>
+			<p>
+				Также система содержит в себе вывод простых отчётов на основе фильтров
+				на web-страницу, после чего пользователь может использовать полученные
+				данные для своих нужд:
+			</p>
+			<ol>
+				<li>Бухгалтер для расчёта зарплаты</li>
+				<li>Администрация для учёта рабочего времени и отпусков</li>
+				<li>Руководители проектов для контроля прогресса разработки</li>
+				<li>И многие другие</li>
+			</ol>
+			<p>
+				С развитием сторонних систем надобность в ручном расчёте постепенно пропадает
+				и всю работу пользователей составляет рутинный перенос данных из web-страницы
+				в сторонний сервис.
+			</p>
+			<p>
+				К сторонним сервисам можно отнести:
+			</p>
+			<ol>
+				<li>1С для расчёта заработной платы бухгалтерией</li>
+				<li>1С для расчёта отпусков администрацией</li>
+				<li>Почтовая служба для рассылок писем</li>
+				<li>Планируемая служба для автоматической генерации записей
+					и проверки рабочего времени на основе внешних источников</li>
+				<li>И многие другие</li>
+			</ol>
+			<p>
+				Исходя из всего вышеперечисленного было принято решение создать
+				систему для интеграции данных компании со сторонними сервисами
+				с целью автоматизации обработки и передачи данных.
 			</p>
 		</div>
 
@@ -841,7 +894,7 @@ foreach ($sources as $source)
 			<h3>Диаграммы вариантов использования</h3>
 			<div class="img">
 				<img src="img/Диаграммы/use_case/TO-BE.svg">
-				<div>Диаграмма вариантов использования</div>
+				<div class="img-label">Диаграмма вариантов использования</div>
 			</div>
 		</div>
 
@@ -850,7 +903,7 @@ foreach ($sources as $source)
 			<h3>Диаграммы состояний</h3>
 			<div class="img">
 				<img src="img/Диаграммы/state/SPA.svg">
-				<div>Диаграмма состояний абстрактного SPA</div>
+				<div class="img-label">Диаграмма состояний абстрактного SPA</div>
 			</div>
 		</div>
 
@@ -859,18 +912,422 @@ foreach ($sources as $source)
 			<h3>Схема данных</h3>
 			<div class="img">
 				<img src="img/Диаграммы/BD/AS-IS.svg">
-				<div>Диаграмма базы данных</div>
+				<div class="img-label">Диаграмма базы данных</div>
 			</div>
 		</div>
 
 		<!--Прототип интерфейса-->
 		<div>
-			<h3>Прототипы основных интерфейсов</h3>
+			<h3>Прототип спецификации api</h3>
 
-			<h4>Главная</h4>
+			<h4>Authenticating requests</h4>
+			<p>
+				Authenticate requests to this API's endpoints by sending a
+				<b>X-Auth-Key</b>b> header with the value
+				<b>"{YOUR_AUTH_KEY}"</b>.
+			</p>
+			<p>
+				All authenticated endpoints are marked with a
+				<b>requires authentication</b> badge in the documentation below.
+			</p>
+			<p>
+				You can get a token along the route /api/login (by nick and
+				password) or /api/token (by exist token) with POST method
+			</p>
+
+			<h4>Tokens</h4>
+			<h5>Token generation</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: POST api/token.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>name string — Token name.</li>
+			</ol>
 			<div class="img">
-				<img src="img/Интерфейс/Главная/1.png">
-				<div>Начало главной страницы</div>
+				<pre>
+curl --request POST \
+    "http://localhost/api/token" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"report-service\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "token": "{YOUR_AUTH_KEY}"
+    }
+}</pre>
+				<div class="code-label">Example response (201)</div>
+			</div>
+
+			<h5>Read all authorized user tokens</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: GET api/token .
+			</p>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/token" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "tokens": [
+            {
+                "name": "login",
+                "abilities": [
+                    "*"
+                ],
+                "last_used_at": "2022-04-01T11:17:50.000000Z"
+            },
+            {
+                "name": "report-service",
+                "abilities": [
+                    "*"
+                ],
+                "last_used_at": null
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h5>Read an authorized user tokens</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: GET api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "abilities": [
+            "*"
+        ],
+        "last_used_at": null
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h5>Edit token</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Edit token name and rights.
+				Rights will be used only those that are available to the user
+				of the token.
+			</p>
+			<p>
+				Token key stays the same.
+			</p>
+			<p>
+				Request: PUT api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>name string — token name</li>
+				<li>abilities  string[] optional — list of rules</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request PUT \
+    "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"report-service\",
+    \"abilities\": [
+        \"*\"
+    ]
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "abilities": [
+            "report:getShort",
+            "report:getByProject"
+        ],
+        "last_used_at": null
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h5>Deleting a token</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Removing an authorized user token by token name.
+			</p>
+			<p>
+				Request: DELETE api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request DELETE \
+    "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>[Empty response]</pre>
+				<div class="code-label">Example response (204)</div>
+			</div>
+
+			<h4>Users</h4>
+
+			<h5>Authentication</h5>
+			<p>
+				User authentication. A token is issued for the user's nick
+				and password for further interaction with the api.
+			</p>
+			<p>
+				The token is created under the name "login" and is available
+				like other tokens.
+			</p>
+			<p>
+				If a "login" token previously existed, it is removed and a new
+				user token is generated.
+			</p>
+			<p>
+				Request: POST api/login.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>nick string — user nick</li>
+				<li>password string — user password</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request POST \
+    "http://localhost/api/login" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"nick\": \"testuser\",
+    \"password\": \"password\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "login",
+        "token": "{YOUR_AUTH_KEY}"
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Отчёт по часам</h4>
+
+			<h5>Короткий отчёт</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Получение короткого отчёта о часах сотрудников за определённый период дней.
+			</p>
+			<p>
+				Простая сумма времени, указанного в блогах, сгруппированные по сотрудникам.
+			</p>
+			<p>
+				Request: GET api/report/hours/short.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Дата начала периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — Дата конца периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/report/hours/short" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2001-10-08\",
+    \"end_date\": \"2016-10-08\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "count_reports": 2,
+        "reports": [
+            {
+                "nick": "nherman",
+                "name": "Myrna Toy II",
+                "company": "ТС",
+                "total_hours": 4.7
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "total_hours": 8.200000000000001
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h5>Отчёт по проектам</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Получение отчёта о часах сотрудников по проектам за определённый
+				период дней.
+			</p>
+			<p>
+				Если на одном проекте работало несколько сотрудников,
+				то создаётся несколько записей в массиве "reports" с одинаковым
+				значением полей, относящихся к проекту.
+			</p>
+			<p>
+				Request: GET api/report/hours/project.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Дата начала периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — Дата конца периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/report/hours/project" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2001-10-08\",
+    \"end_date\": \"2016-10-08\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "count_reports": 4,
+        "reports": [
+            {
+                "nick": "nherman",
+                "name": "Myrna Toy II",
+                "company": "ТС",
+                "customer_id": 24,
+                "customer_name": "est explicabo nesciunt",
+                "project_id": 26,
+                "project_name": "dolores neque quae",
+                "total_hours": 4.7
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 28,
+                "customer_name": "aut et voluptatem",
+                "project_id": 12,
+                "project_name": "dicta reiciendis asperiores",
+                "total_hours": 4.4
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 15,
+                "customer_name": "quo voluptas porro",
+                "project_id": 16,
+                "project_name": "est voluptas voluptates",
+                "total_hours": 2.2
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 23,
+                "customer_name": "non aut nisi",
+                "project_id": 30,
+                "project_name": "assumenda et sequi",
+                "total_hours": 1.6
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
 			</div>
 		</div>
 
@@ -885,7 +1342,7 @@ foreach ($sources as $source)
 				Данное приложение является первой версией и закладывает
 				основу для развития.
 			</p>
-			<h4>Реализованный функционал</h4>
+			<h3>Реализованный функционал</h3>
 			<p>
 				В ходе выполнения работы был разработан следующий
 				функционал системы:
@@ -983,18 +1440,416 @@ foreach ($sources as $source)
 	</footer>
 	<main>
 		<div>
-			<h2>Руководство пользователя</h2>
-			<h3>Регистрация</h3>
+			<h2>Documentation API</h2>
+
+			<h3>Authenticating requests</h3>
 			<p>
-				Чтобы полноценно работать с сайтом необходимо зарегистрироваться.
-				Для этого нужно выполнить следующие шаги:
+				Authenticate requests to this API's endpoints by sending a
+				<b>X-Auth-Key</b>b> header with the value
+				<b>"{YOUR_AUTH_KEY}"</b>.
 			</p>
 			<p>
-				1. Перейти на сайт. Для примера приведена главная страница.
+				All authenticated endpoints are marked with a
+				<b>requires authentication</b> badge in the documentation below.
+			</p>
+			<p>
+				You can get a token along the route /api/login (by nick and
+				password) or /api/token (by exist token) with POST method
+			</p>
+
+			<h3>Tokens</h3>
+			<h4>Token generation</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: POST api/token.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>name string — Token name.</li>
+			</ol>
+			<div class="img">
+				<pre>
+curl --request POST \
+    "http://localhost/api/token" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"report-service\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "token": "{YOUR_AUTH_KEY}"
+    }
+}</pre>
+				<div class="code-label">Example response (201)</div>
+			</div>
+
+			<h4>Read all authorized user tokens</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: GET api/token .
 			</p>
 			<div class="img">
-				<img src="img/help/Главная.png">
-				<div>Главная страница</div>
+				<pre>curl --request GET \
+    --get "http://localhost/api/token" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "tokens": [
+            {
+                "name": "login",
+                "abilities": [
+                    "*"
+                ],
+                "last_used_at": "2022-04-01T11:17:50.000000Z"
+            },
+            {
+                "name": "report-service",
+                "abilities": [
+                    "*"
+                ],
+                "last_used_at": null
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Read an authorized user tokens</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Request: GET api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "abilities": [
+            "*"
+        ],
+        "last_used_at": null
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Edit token</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Edit token name and rights.
+				Rights will be used only those that are available to the user
+				of the token.
+			</p>
+			<p>
+				Token key stays the same.
+			</p>
+			<p>
+				Request: PUT api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>name string — token name</li>
+				<li>abilities  string[] optional — list of rules</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request PUT \
+    "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"name\": \"report-service\",
+    \"abilities\": [
+        \"*\"
+    ]
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "report-service",
+        "abilities": [
+            "report:getShort",
+            "report:getByProject"
+        ],
+        "last_used_at": null
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Deleting a token</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Removing an authorized user token by token name.
+			</p>
+			<p>
+				Request: DELETE api/token/{token_name}.
+			</p>
+			<p>
+				URL Parameters:
+			</p>
+			<ol>
+				<li>token_name string — user token name</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request DELETE \
+    "http://localhost/api/token/report-service" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>[Empty response]</pre>
+				<div class="code-label">Example response (204)</div>
+			</div>
+
+			<h3>Users</h3>
+
+			<h4>Authentication</h4>
+			<p>
+				User authentication. A token is issued for the user's nick
+				and password for further interaction with the api.
+			</p>
+			<p>
+				The token is created under the name "login" and is available
+				like other tokens.
+			</p>
+			<p>
+				If a "login" token previously existed, it is removed and a new
+				user token is generated.
+			</p>
+			<p>
+				Request: POST api/login.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>nick string — user nick</li>
+				<li>password string — user password</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request POST \
+    "http://localhost/api/login" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"nick\": \"testuser\",
+    \"password\": \"password\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "name": "login",
+        "token": "{YOUR_AUTH_KEY}"
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h3>Отчёт по часам</h3>
+
+			<h4>Короткий отчёт</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Получение короткого отчёта о часах сотрудников за определённый период дней.
+			</p>
+			<p>
+				Простая сумма времени, указанного в блогах, сгруппированные по сотрудникам.
+			</p>
+			<p>
+				Request: GET api/report/hours/short.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Дата начала периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — Дата конца периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/report/hours/short" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2001-10-08\",
+    \"end_date\": \"2016-10-08\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "count_reports": 2,
+        "reports": [
+            {
+                "nick": "nherman",
+                "name": "Myrna Toy II",
+                "company": "ТС",
+                "total_hours": 4.7
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "total_hours": 8.200000000000001
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Отчёт по проектам</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Получение отчёта о часах сотрудников по проектам за определённый
+				период дней.
+			</p>
+			<p>
+				Если на одном проекте работало несколько сотрудников,
+				то создаётся несколько записей в массиве "reports" с одинаковым
+				значением полей, относящихся к проекту.
+			</p>
+			<p>
+				Request: GET api/report/hours/project.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Дата начала периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — Дата конца периода отчёта.
+					Включительно. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/report/hours/project" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2001-10-08\",
+    \"end_date\": \"2016-10-08\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "count_reports": 4,
+        "reports": [
+            {
+                "nick": "nherman",
+                "name": "Myrna Toy II",
+                "company": "ТС",
+                "customer_id": 24,
+                "customer_name": "est explicabo nesciunt",
+                "project_id": 26,
+                "project_name": "dolores neque quae",
+                "total_hours": 4.7
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 28,
+                "customer_name": "aut et voluptatem",
+                "project_id": 12,
+                "project_name": "dicta reiciendis asperiores",
+                "total_hours": 4.4
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 15,
+                "customer_name": "quo voluptas porro",
+                "project_id": 16,
+                "project_name": "est voluptas voluptates",
+                "total_hours": 2.2
+            },
+            {
+                "nick": "sterling03",
+                "name": "Oliver Daniel",
+                "company": "ТС",
+                "customer_id": 23,
+                "customer_name": "non aut nisi",
+                "project_id": 30,
+                "project_name": "assumenda et sequi",
+                "total_hours": 1.6
+            }
+        ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
 			</div>
 		</div>
 		<div></div>
