@@ -11,8 +11,8 @@ use Tests\TestCase;
 class ReportHoursTest extends TestCase
 {
     /**
-     * Тест совпадения суммы коротких отчётов для проверки того,
-     * что достаются все записи и всё считается верно.
+     * Short report sum matching test to check that all records are retrieved
+     * and everything is considered correct.
      *
      * @return void
      */
@@ -31,14 +31,15 @@ class ReportHoursTest extends TestCase
             $totalSum,
             0.00001,
             <<<MSG
-            Сумма часов всех блогов и сумма часов всех отчётов разнится более
-            чем на разрешённую погрешность 0.01. Текушая разница равна $delta.
+            The sum of hours of all blogs and the sum of hours of all reports
+            differ by more than the allowed error. The current difference is $delta.
             MSG
         );
     }
 
     /**
-     * Тот же тест, но для отчётов по проектам.
+     * Report sum matching test to check that all records are retrieved
+     * and everything is considered correct.
      *
      * @return void
      */
@@ -57,37 +58,37 @@ class ReportHoursTest extends TestCase
             $totalSum,
             0.00001,
             <<<MSG
-            Сумма часов всех блогов и сумма часов всех отчётов разнится более
-            чем на разрешённую погрешность. Текушая разница равна $delta.
+            The sum of hours of all blogs and the sum of hours of all reports
+            differ by more than the allowed error. The current difference is $delta.
             MSG
         );
     }
 
     /**
-     * Проверка на корректную фильтрацию по дате.
+     * Check for correct filtering by date.
      *
      * @return void
      */
     public function test_correct_time_filter()
     {
-        // Отчистка случайных значений.
+        // Delete random values.
         BlogRecord::joinRelationship('dailyBlog')
             ->where(
                 'date',
                 '>=',
-                date_create('10.08.2001')
+                date_create('2001-08-10')
             )
             ->where(
                 'date',
                 '<=',
-                date_create('10.08.2016')
+                date_create('2016-08-10')
             )->delete();
-        // Генерация известных значений.
+            // Generation of known values.
         $day = DailyBlog::factory()->make();
         $day->date = date_create('@' .
                 rand(
-                    997376400, // 10.08.2001
-                    1470762000, // 10.08.2016
+                    997376400, // 2001-08-10
+                    1470762000, // 2016-08-10
                 )
             );
         $day->save();
@@ -97,7 +98,7 @@ class ReportHoursTest extends TestCase
                 'time' => 2.1
             ])
             ->create();
-        // Собственно тест.
+
         $report = new ReportHours('10.08.2001', '10.08.2016');
         $totalSum = 0;
         foreach ($report->reportShort() as $reportData)
@@ -109,18 +110,13 @@ class ReportHoursTest extends TestCase
             $totalSum,
             0.00001,
             <<<MSG
-            Сумма часов отчётов отличается от расчётной более чем на разрешённую
-            погрешность. Текушая сумма равна $totalSum.
+            The sum of hours of all blogs and the sum of hours of all reports
+            differ by more than the allowed error. The current sum is $totalSum.
             MSG
         );
     }
 
-    /**
-     * Тест http запроса на короткий отчёт.
-     *
-     * @return void
-     */
-    public function test_short_report_request()
+    public function test_short_report_http_request()
     {
         $this->authorization();
         $response = $this->get('api/report/hours/short');
@@ -139,23 +135,18 @@ class ReportHoursTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
 
         $this->assertEquals(
             $data['data']['count_reports'],
             count($data['data']['reports']),
-            'Поле count_reports должно показывать количество отчётов'
+            'The count_reports field should show the correct number of reports.'
         );
     }
 
-    /**
-     * Тест http запроса на отчёт с проектами.
-     *
-     * @return void
-     */
-    public function test_report_by_project_request()
+    public function test_report_by_project_http_request()
     {
         $this->authorization();
         $response = $this->get('api/report/hours/project');
@@ -178,14 +169,14 @@ class ReportHoursTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
 
         $this->assertEquals(
             $data['data']['count_reports'],
             count($data['data']['reports']),
-            'Поле count_reports должно показывать количество отчётов'
+            'The count_reports field should show the correct number of reports.'
         );
     }
 }

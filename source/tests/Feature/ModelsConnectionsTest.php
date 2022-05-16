@@ -2,12 +2,10 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
 use App\Models\Project;
 use App\Models\User;
-use App\Models\Customer;
+use Tests\TestCase;
+use App\Models\Vacation;
 
 class ModelsConnectionsTest extends TestCase
 {
@@ -15,14 +13,13 @@ class ModelsConnectionsTest extends TestCase
     {
         foreach (User::all() as $user)
         {
-            // Пользователь не обязан быть зарегистрированным работником.
             if(is_null($user->worker))
             {
                 continue;
             }
             $this->assertTrue(
                 $user->is($user->worker->user),
-                "Модель worker не связана с User. Ник {$user->nick}"
+                "Model worker didn't related with User {$user->nick}."
             );
         }
     }
@@ -35,9 +32,23 @@ class ModelsConnectionsTest extends TestCase
             {
                 $this->assertTrue(
                     $project->is($blogRecord->project),
-                    "Модель blogRecord({$blogRecord->id}) не связана с project({$project->id})."
+                    "Model blogRecord({$blogRecord->id}) didn't related " .
+                    "with project({$project->id})."
                 );
             }
         }
+    }
+
+    public function test_vacation()
+    {
+        $numberRecords = 30;
+        Vacation::truncate();
+        Vacation::factory($numberRecords)->create();
+        $records = Vacation::joinRelationship('worker')->get();
+        $this->assertEquals(
+            $numberRecords,
+            count($records),
+            "Join Vacation and Worker return uncorrect number records."
+        );
     }
 }

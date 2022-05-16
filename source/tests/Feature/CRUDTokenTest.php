@@ -2,9 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Models\User;
 use Illuminate\Support\Facades\Validator;
-use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
 class CRUDTokenTest extends TestCase
@@ -41,8 +39,8 @@ class CRUDTokenTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
 
         $response = $this->get('/api/token/test token');
@@ -71,8 +69,8 @@ class CRUDTokenTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
     }
 
@@ -97,8 +95,8 @@ class CRUDTokenTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
     }
 
@@ -114,7 +112,9 @@ class CRUDTokenTest extends TestCase
         $response = $this->get('/api/token/new name test token');
         $response->assertStatus(404);
 
-        $response = $this->put('/api/token/test token', ['name' => 'new name test token']);
+        $response = $this->put('/api/token/test token', [
+            'name' => 'new name test token'
+        ]);
         $response->assertStatus(200);
         $data = $response->json();
 
@@ -128,14 +128,14 @@ class CRUDTokenTest extends TestCase
         $errors = $validator->errors()->all();
         $this->assertEmpty(
             $errors,
-            "Приложение вернуло некорректный ответ на запрос. Ошибки:\n"
-            . implode("\n", $errors)
+            "The application returned an incorrect response to the request. " .
+            "Errors:\n" . implode("\n", $errors)
         );
         $data = $validator->validated();
         $this->assertSame(
             'new name test token',
             $data['data']['name'],
-            "Токен {$data['data']['name']} не принял новое значение имени."
+            "Token {$data['data']['name']} did not accept the new name."
         );
 
         $response = $this->get('/api/token/test token');

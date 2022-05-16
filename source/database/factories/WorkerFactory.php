@@ -17,14 +17,13 @@ class WorkerFactory extends Factory
      */
     public function definition()
     {
-        
         return [
             'nick' => substr($this->faker->userName(),0,15),
             'name' => $this->faker->name(),
             'birthday' => $this->faker->date(max: '2006-01-01'),
             'role' => $this->faker->words(asText: true),
             'email' => $this->faker->email(),
-            'department_id' => Department::all()->random()->id,
+            'department_id' => Department::factory(),
             'department_lead' => rand(0, 255),
             'image_small' => '',
             'image_big' => '',

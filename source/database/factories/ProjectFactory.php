@@ -18,11 +18,6 @@ class ProjectFactory extends Factory
      */
     public function definition()
     {
-        $parentProject = null;
-        if(Project::all()->isNotEmpty() && rand(0,1))
-        {
-            $parentProject = Project::all()->random()->id;
-        }
         return [
             'name' => $this->faker->words(asText: true),
             'description' => $this->faker->text(),
@@ -33,8 +28,8 @@ class ProjectFactory extends Factory
                 'frozen',
                 'closed'
             ]),
-            'customer_id' => Customer::all()->random()->id,
-            'parent_id' => $parentProject,
+            'customer_id' => Customer::factory(),
+            'parent_id' => null,
             'email' => $this->faker->email(),
             'reportable' => rand(0, 127),
             'report_day' => $this->faker->dayOfWeek(),

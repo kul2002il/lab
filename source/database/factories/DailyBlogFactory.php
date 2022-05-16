@@ -18,7 +18,7 @@ class DailyBlogFactory extends Factory
     public function definition()
     {
         return [
-            'week_blog_id' => WeeklyBlog::all()->random()->id,
+            'week_blog_id' => WeeklyBlog::factory(),
             'date' => $this->faker->date(),
             'filled' => rand(0, 127),
         ];

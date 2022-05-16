@@ -18,7 +18,7 @@ class WeeklyBlogFactory extends Factory
     public function definition()
     {
         return [
-            'worker_nick' => Worker::all()->random()->nick,
+            'worker_nick' => fn()=>Worker::factory()->create()->nick,
             'start_date' => $this->faker->date(),
             'end_date' => $this->faker->date(),
         ];

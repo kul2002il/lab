@@ -9,15 +9,12 @@ use App\Models\ReportHours;
 class ActionShowReportHours
 {
     /**
-     * Короткий отчёт
+     * Show report
      *
-     * Получение короткого отчёта о часах сотрудников за определённый период
-     * дней.
+     * Getting a short report on hours from employees for a certain period
+     * of days.
      *
-     * Простая сумма времени, указанного в блогах, сгруппированные по
-     * сотрудникам.
-     *
-     * @group Отчёт по часам
+     * @group Report hours
      */
     function __invoke(GetByStartEndDateRequest $request) {
         $report = new ReportHours(

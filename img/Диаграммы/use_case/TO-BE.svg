@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="42cm" height="51cm" viewBox="95 -281 826 1003" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="42cm" height="57cm" viewBox="95 -281 826 1123" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Фон">
     <g>
       <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="160" cy="-216" rx="6" ry="6"/>
@@ -27,7 +27,7 @@
       </text>
       <line style="fill: none; stroke-opacity: 1; stroke-width: 1; stroke: #000000" x1="310" y1="-255.1" x2="385.3" y2="-255.1"/>
     </g>
-    <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="300,-244 300,720 920,720 920,-280 395.3,-280 "/>
+    <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="300,-244 300,840 920,840 920,-280 395.3,-280 "/>
     <g>
       <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="160" cy="4" rx="6" ry="6"/>
       <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="136" y1="16" x2="184" y2="16"/>
@@ -64,8 +64,8 @@
     </g>
     <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="185" y1="40" x2="420" y2="12"/>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="551.6" y1="12" x2="676.052" y2="-39.8665"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="670.809,-32.2646 678.116,-40.7267 666.962,-41.4951 "/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="551.6" y1="12" x2="676.052" y2="-39.8664"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="670.809,-32.2645 678.116,-40.7266 666.962,-41.495 "/>
     </g>
     <g>
       <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="572.74" y="-22.2434" width="86.3" height="14.9"/>
@@ -82,13 +82,13 @@
       </text>
     </g>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="551.6" y1="12" x2="677.987" y2="72.1374"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="668.828,73.3165 680.006,73.0981 673.125,64.2866 "/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="551.6" y1="12" x2="677.988" y2="72.1373"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="668.829,73.3164 680.007,73.0981 673.125,64.2865 "/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="573.663" y="35.5794" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="616.813" y="47.4607">
-        <tspan x="616.813" y="47.4607">"расширить"</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="573.662" y="35.5794" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="616.812" y="47.4607">
+        <tspan x="616.812" y="47.4607">"расширить"</tspan>
       </text>
     </g>
     <g>
@@ -118,37 +118,37 @@
     </g>
     <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="185" y1="340" x2="420" y2="332"/>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="566.6" y1="332" x2="695.577" y2="312.663"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="688.641,318.759 697.789,312.332 687.158,308.869 "/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="566.6" y1="332" x2="675.528" y2="332"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="667.764,337 677.764,332 667.764,327 "/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="590.15" y="314.55" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="633.3" y="326.431">
-        <tspan x="633.3" y="326.431">"расширить"</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="580.15" y="324.55" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="623.3" y="336.431">
+        <tspan x="623.3" y="336.431">"расширить"</tspan>
       </text>
     </g>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="760.2" cy="312" rx="60.2" ry="32"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="760.2" y="307.881">
-        <tspan x="760.2" y="307.881">Отчёт</tspan>
-        <tspan x="760.2" y="323.881">по часам</tspan>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="740.2" cy="332" rx="60.2" ry="32"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="740.2" y="327.881">
+        <tspan x="740.2" y="327.881">Отчёт</tspan>
+        <tspan x="740.2" y="343.881">по часам</tspan>
       </text>
     </g>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="566.6" y1="332" x2="685.346" y2="387.893"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="676.191,389.11 687.369,388.845 680.45,380.062 "/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="566.6" y1="332" x2="646.075" y2="260.103"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="643.672,269.019 647.734,258.603 636.963,261.604 "/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="584.846" y="353.449" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="627.996" y="365.33">
-        <tspan x="627.996" y="365.33">"расширить"</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="564.846" y="287.101" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="607.996" y="298.983">
+        <tspan x="607.996" y="298.983">"расширить"</tspan>
       </text>
     </g>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="760.35" cy="413.45" rx="100.35" ry="33.45"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="760.35" y="409.331">
-        <tspan x="760.35" y="409.331">Отчёт по часам</tspan>
-        <tspan x="760.35" y="425.331">по проектам</tspan>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="720.35" cy="233.45" rx="100.35" ry="33.45"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="720.35" y="229.331">
+        <tspan x="720.35" y="229.331">Отчёт по часам</tspan>
+        <tspan x="720.35" y="245.331">по проектам</tspan>
       </text>
     </g>
     <g>
@@ -160,62 +160,98 @@
     </g>
     <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="185" y1="40" x2="400" y2="212"/>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="452.225" cy="497.408" rx="112.225" ry="37.4083"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="452.225" y="493.29">
-        <tspan x="452.225" y="493.29">Получение данных</tspan>
-        <tspan x="452.225" y="509.29">рабочего времени</tspan>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="452.225" cy="597.408" rx="112.225" ry="37.4083"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="452.225" y="593.29">
+        <tspan x="452.225" y="593.29">Получение данных</tspan>
+        <tspan x="452.225" y="609.29">рабочего времени</tspan>
       </text>
     </g>
-    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="185" y1="340" x2="372.87" y2="470.957"/>
+    <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" x1="185" y1="340" x2="372.87" y2="570.957"/>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="564.45" y1="497.408" x2="689.003" y2="491.373"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="681.491,496.743 691.237,491.265 681.007,486.755 "/>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="564.45" y1="597.408" x2="689.088" y2="572.048"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="682.477,578.495 691.279,571.602 680.483,568.696 "/>
     </g>
     <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="585.81" y="486.833" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="628.96" y="498.714">
-        <tspan x="628.96" y="498.714">"расширить"</tspan>
-      </text>
-    </g>
-    <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="774.275" cy="518.092" rx="114.275" ry="38.0917"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="774.275" y="513.973">
-        <tspan x="774.275" y="513.973">Получение рабочих</tspan>
-        <tspan x="774.275" y="529.973">дней сотрудника</tspan>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="585.81" y="576.832" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="628.96" y="588.713">
+        <tspan x="628.96" y="588.713">"расширить"</tspan>
       </text>
     </g>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="452.225" y1="534.817" x2="457.907" y2="575.571"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="451.883,568.572 458.216,577.785 461.787,567.191 "/>
-    </g>
-    <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="412.225" y="549.958" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="455.375" y="561.84">
-        <tspan x="455.375" y="561.84">"расширить"</tspan>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="774.275" cy="598.092" rx="114.275" ry="38.0917"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="774.275" y="593.973">
+        <tspan x="774.275" y="593.973">Получение рабочих</tspan>
+        <tspan x="774.275" y="609.973">дней сотрудника</tspan>
       </text>
     </g>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="458.525" cy="619.508" rx="118.525" ry="39.5083"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="458.525" y="615.39">
-        <tspan x="458.525" y="615.39">Получение рабочего</tspan>
-        <tspan x="458.525" y="631.39">времени сотрудника</tspan>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="452.225" y1="634.817" x2="457.069" y2="695.542"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="451.468,688.2 457.247,697.771 461.436,687.405 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="411.675" y="659.958" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="454.825" y="671.84">
+        <tspan x="454.825" y="671.84">"расширить"</tspan>
       </text>
     </g>
     <g>
-      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="531.58" y1="523.86" x2="671.435" y2="609.416"/>
-      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="662.203,609.63 673.342,610.583 667.421,601.099 "/>
-    </g>
-    <g>
-      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="560.265" y="560.355" width="86.3" height="14.9"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="603.415" y="572.236">
-        <tspan x="603.415" y="572.236">"расширить"</tspan>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="457.425" cy="745.808" rx="137.425" ry="45.8083"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="457.425" y="741.69">
+        <tspan x="457.425" y="741.69">Получение отработанного</tspan>
+        <tspan x="457.425" y="757.69">времени сотрудника</tspan>
       </text>
     </g>
     <g>
-      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="760.35" cy="640.117" rx="120.35" ry="40.1167"/>
-      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="760.35" y="635.998">
-        <tspan x="760.35" y="635.998">Получение дней</tspan>
-        <tspan x="760.35" y="651.998">отпусков сотрудника</tspan>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="531.58" y1="623.86" x2="671.207" y2="689.839"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="662.051,691.043 673.228,690.795 666.323,682.002 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="560.265" y="650.355" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="603.415" y="662.236">
+        <tspan x="603.415" y="662.236">"расширить"</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="760.35" cy="720.117" rx="120.35" ry="40.1167"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="760.35" y="715.998">
+        <tspan x="760.35" y="715.998">Получение дней</tspan>
+        <tspan x="760.35" y="731.998">отпусков сотрудника</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="746.75" cy="468" rx="86.75" ry="48"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="746.75" y="455.881">
+        <tspan x="746.75" y="455.881">Получение</tspan>
+        <tspan x="746.75" y="471.881">расписания</tspan>
+        <tspan x="746.75" y="487.881">сотрудников</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff; fill-opacity: 1; stroke-opacity: 1; stroke-width: 2; stroke: #000000" cx="478.5" cy="448" rx="98.5" ry="48"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="478.5" y="435.881">
+        <tspan x="478.5" y="435.881">Получение</tspan>
+        <tspan x="478.5" y="451.881">официального</tspan>
+        <tspan x="478.5" y="467.881">расписания</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="452.225" y1="560" x2="476.802" y2="500.137"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="478.478,509.218 477.651,498.069 469.228,505.42 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="422.212" y="520.55" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="465.362" y="532.431">
+        <tspan x="465.362" y="532.431">"расширить"</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke-dasharray: 10; stroke: #000000" x1="531.58" y1="570.957" x2="681.328" y2="503.772"/>
+      <polyline style="fill: none; stroke-opacity: 1; stroke-width: 2; stroke: #000000" points="676.291,511.512 683.368,502.856 672.198,502.388 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff; fill-opacity: 1; stroke: none" x="565.344" y="528.999" width="86.3" height="14.9"/>
+      <text font-size="12.8" style="fill: #000000; fill-opacity: 1; stroke: none;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="608.494" y="540.88">
+        <tspan x="608.494" y="540.88">"расширить"</tspan>
       </text>
     </g>
   </g>

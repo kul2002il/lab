@@ -5,13 +5,13 @@ namespace Tests\Feature;
 use Tests\TestCase;
 
 /**
- * Тесты на проверку доступности ресурсов в зависимости от аутентификации
- * в системе.
+ * Tests for checking the availability of resources depending
+ * on the authentication in the system.
  */
 class AuthTest extends TestCase
 {
     /**
-     * Проверка кодов ответов при отсутствии аутентификации.
+     * Checking response codes in the absence of authentication.
      *
      * @return void
      */
@@ -32,7 +32,7 @@ class AuthTest extends TestCase
     }
 
     /**
-     * Проверка кодов ответов при аутентификации.
+     * Checking response codes during authentication.
      *
      * @return void
      */

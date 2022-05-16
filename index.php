@@ -149,7 +149,7 @@ foreach ($sources as $source)
 	{
 		color: initial;
 		background-color: initial;
-		border: 1px solid black;
+		/*border: 1px solid black;*/
 	}
 	</style>
 	<script type="text/javascript">
@@ -159,20 +159,34 @@ foreach ($sources as $source)
 		{
 			start: -1,
 			from: 3,
-			to: 26,
+			to: 30,
 		},
 	};
 	layers.add1 =
 	{
-		add1: 27,
-		add2: 124,
+		add1: 31,
+		add2: 107,
 		pages:
 		{
 			start: -2,
-			from: 27,
-			to: 131,
+			from: 31,
+			to: 115,
 		},
 	};
+	let strRanges = '1,3,';
+	for (let el in layers)
+	{
+		strRanges += (layers[el].pages.from - layers[el].pages.start + 1)
+			+ '-'
+			+ (layers[el].pages.to - layers[el].pages.start + 1)
+			+ ',';
+	}
+	window.addEventListener('keydown', (e)=>{
+		if(e.code === 'KeyS')
+		{
+			alert(strRanges)
+		}
+	})
 	</script>
 </head>
 <body>
@@ -285,7 +299,7 @@ foreach ($sources as $source)
 					<td></td>
 					<td></td>
 					<td>2</td>
-					<td>131</td>
+					<td>115</td>
 				</tr>
 				<tr>
 					<td colspan="2">Реценз</td>
@@ -342,35 +356,35 @@ foreach ($sources as $source)
 				</tr>
 				<tr>
 					<td>2.2 Диаграмма вариантов использования</td>
-					<td>14</td>
-				</tr>
-				<tr>
-					<td>2.3 Диаграмма состояний</td>
 					<td>15</td>
 				</tr>
 				<tr>
-					<td>2.4 Схема данных</td>
+					<td>2.3 Диаграмма состояний</td>
 					<td>16</td>
 				</tr>
 				<tr>
-					<td>2.6 Описание API</td>
+					<td>2.4 Схема данных</td>
 					<td>17</td>
 				</tr>
 				<tr>
+					<td>2.6 Описание API</td>
+					<td>18</td>
+				</tr>
+				<tr>
 					<td>ЗАКЛЮЧЕНИЕ</td>
-					<td>25</td>
+					<td>29</td>
 				</tr>
 				<tr>
 					<td>Перечень используемых источников</td>
-					<td>26</td>
+					<td>30</td>
 				</tr>
 				<tr>
 					<td>Приложение А. Листинг программы</td>
-					<td>27</td>
+					<td>31</td>
 				</tr>
 				<tr>
 					<td>Приложение Б. Инструкция пользователя</td>
-					<td>124</td>
+					<td>107</td>
 				</tr>
 			</table>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -861,6 +875,65 @@ foreach ($sources as $source)
 				</li>
 			</ol>
 
+			<h5>Получение расписания официальных рабочих дней</h5>
+			<p>Входные данные:</p>
+			<ol>
+				<li>Дата начала отчётного периода</li>
+				<li>Дата конца отчётного периода</li>
+			</ol>
+			<p>Выходные данные — список дней, где каждый элемент содержит:</p>
+			<ol>
+				<li>Сатус дня: рабочий, выходной или конфликтый</li>
+				<li>Дополнительная информация о причине изменений</li>
+			</ol>
+			<p>Описание поведения:</p>
+			<ol>
+				<li>
+					Выборка диаппазонов выходных из БД.
+				</li>
+				<li>
+					Формирование расписания по дням
+				</li>
+				<li>
+					Отправка результата.
+				</li>
+			</ol>
+
+			<h5>Получение расписания рабочих дней сотрудников</h5>
+			<p>Входные данные:</p>
+			<ol>
+				<li>Дата начала отчётного периода</li>
+				<li>Дата конца отчётного периода</li>
+			</ol>
+			<p>
+				Выходные данные — список дней, сгруппированных по сотрудникам.
+				Где каждый день содержит:
+			</p>
+			<ol>
+				<li>Сатус дня: рабочий, выходной или конфликтый</li>
+				<li>Дополнительная информация о причине изменений</li>
+				<li>Сумма отработанных сотрудником часов за данный день</li>
+			</ol>
+			<p>Описание поведения:</p>
+			<ol>
+				<li>
+					Получение расписания официальных рабочих дней
+				</li>
+				<li>
+					Выборка диаппазонов выходных сотрудников из БД
+					и дополнения ими рассписания каждого сотрудника.
+				</li>
+				<li>
+					Формирование расписания по дням
+				</li>
+				<li>
+					Дополнение рассписания данными о выполненной работе.
+				</li>
+				<li>
+					Отправка результата.
+				</li>
+			</ol>
+
 
 			<h3>Описание требований к среде выполнения</h3>
 
@@ -1329,13 +1402,135 @@ curl --request POST \
 }</pre>
 				<div class="code-label">Example response (200)</div>
 			</div>
+
+			<h4>Schedule</h4>
+
+			<h5>Official schedule</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Getting a short report on hours from employees for a certain period of days.
+			</p>
+			<p>
+				Request: GET api/shedule/official.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/shedule/official" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "2010-10-07": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-08": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-09": {
+            "status": "work",
+            "info": []
+        }
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h5>Workers schedule</h5>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Getting the workers schedule for the period requested with his worked hours by days.
+			</p>
+			<p>
+				Request: GET api/shedule/worker.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/shedule/worker" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "ilene.wolf": {
+        "2010-10-07": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-08": {
+            "status": "work",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui.",
+                "Provident delectus et atque sequi."
+            ],
+            "total_hours": 5
+        },
+        "2010-10-09": {
+            "status": "work",
+            "info": []
+        }
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
 		</div>
 
 
 		<div>
 			<h2>ЗАКЛЮЧЕНИЕ</h2>
 			<p>
-				В ходе выполнения курсовой работы было разработано приложение
+				В ходе выполнения преддипломной практики было разработано приложение
 				для интеграции сервисов с данными компании Томсксофт.
 			</p>
 			<p>
@@ -1357,6 +1552,12 @@ curl --request POST \
 				<li>
 					Формирование отчётных данных по часам сотрудников
 					и по часам сотрудников по проектам
+				</li>
+				<li>
+					Получение рассписания рабочих дней компании
+				</li>
+				<li>
+					Получение рассписания рабочих дней сотрудников компании
 				</li>
 				<li>
 					Автоматические тесты разрабатываемой системы
@@ -1387,6 +1588,11 @@ curl --request POST \
 					Официальная документация php [Электронный ресурс] URL:
 					https://www.php.net
 					(дата обращения: 10.04.2022)
+				</li>
+				<li>
+					README.md eloquent-power-joins [Электронный ресурс] URL:
+					https://github.com/kirschbaum-development/eloquent-power-joins
+					(дата обращения: 16.05.2022)
 				</li>
 				<li>
 					Laravel — Википедия [Электронный ресурс] URL:
@@ -1697,17 +1903,14 @@ curl --request POST \
 				<div class="code-label">Example response (200)</div>
 			</div>
 
-			<h3>Отчёт по часам</h3>
+			<h3>Report hours</h3>
 
-			<h4>Короткий отчёт</h4>
+			<h4>Short report</h4>
 			<p>
 				<b>Requires authentication.</b>
 			</p>
 			<p>
-				Получение короткого отчёта о часах сотрудников за определённый период дней.
-			</p>
-			<p>
-				Простая сумма времени, указанного в блогах, сгруппированные по сотрудникам.
+				Getting a short report on hours from employees for a certain period of days.
 			</p>
 			<p>
 				Request: GET api/report/hours/short.
@@ -1717,12 +1920,12 @@ curl --request POST \
 			</p>
 			<ol>
 				<li>
-					start_date  string optional — Дата начала периода отчёта.
-					Включительно. Must be a valid date.
+					start_date  string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
 				</li>
 				<li>
-					end_date  string optional — Дата конца периода отчёта.
-					Включительно. Must be a valid date.
+					end_date  string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
 				</li>
 			</ol>
 			<div class="img">
@@ -1732,27 +1935,21 @@ curl --request POST \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"start_date\": \"2001-10-08\",
-    \"end_date\": \"2016-10-08\"
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
 }"</pre>
 				<div class="code-label">Example request</div>
 			</div>
 			<div class="img">
 				<pre>{
     "data": {
-        "count_reports": 2,
+        "count_reports": 1,
         "reports": [
             {
-                "nick": "nherman",
-                "name": "Myrna Toy II",
-                "company": "ТС",
-                "total_hours": 4.7
-            },
-            {
-                "nick": "sterling03",
-                "name": "Oliver Daniel",
-                "company": "ТС",
-                "total_hours": 8.200000000000001
+                "nick": "ilene.wolf",
+                "name": "Vickie Jerde",
+                "company": "Р",
+                "total_hours": 5
             }
         ]
     }
@@ -1760,18 +1957,18 @@ curl --request POST \
 				<div class="code-label">Example response (200)</div>
 			</div>
 
-			<h4>Отчёт по проектам</h4>
+			<h4>Report hours by project</h4>
 			<p>
 				<b>Requires authentication.</b>
 			</p>
 			<p>
-				Получение отчёта о часах сотрудников по проектам за определённый
-				период дней.
+				Getting a report on hours from employees ordered by project
+				for a certain period of days.
 			</p>
 			<p>
-				Если на одном проекте работало несколько сотрудников,
-				то создаётся несколько записей в массиве "reports" с одинаковым
-				значением полей, относящихся к проекту.
+				If several employees worked on one project,
+				then several records are created in the reports array with
+				the same value of the fields related to the project.
 			</p>
 			<p>
 				Request: GET api/report/hours/project.
@@ -1781,12 +1978,12 @@ curl --request POST \
 			</p>
 			<ol>
 				<li>
-					start_date  string optional — Дата начала периода отчёта.
-					Включительно. Must be a valid date.
+					start_date string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
 				</li>
 				<li>
-					end_date  string optional — Дата конца периода отчёта.
-					Включительно. Must be a valid date.
+					end_date string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
 				</li>
 			</ol>
 			<div class="img">
@@ -1796,57 +1993,159 @@ curl --request POST \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"start_date\": \"2001-10-08\",
-    \"end_date\": \"2016-10-08\"
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
 }"</pre>
 				<div class="code-label">Example request</div>
 			</div>
 			<div class="img">
 				<pre>{
     "data": {
-        "count_reports": 4,
+        "count_reports": 2,
         "reports": [
             {
-                "nick": "nherman",
-                "name": "Myrna Toy II",
-                "company": "ТС",
-                "customer_id": 24,
-                "customer_name": "est explicabo nesciunt",
-                "project_id": 26,
-                "project_name": "dolores neque quae",
-                "total_hours": 4.7
+                "nick": "ilene.wolf",
+                "name": "Vickie Jerde",
+                "company": "Р",
+                "customer_id": 1,
+                "customer_name": "ullam et esse",
+                "project_id": 1,
+                "project_name": "pariatur voluptatem corrupti",
+                "total_hours": 3.2
             },
             {
-                "nick": "sterling03",
-                "name": "Oliver Daniel",
-                "company": "ТС",
-                "customer_id": 28,
-                "customer_name": "aut et voluptatem",
-                "project_id": 12,
-                "project_name": "dicta reiciendis asperiores",
-                "total_hours": 4.4
-            },
-            {
-                "nick": "sterling03",
-                "name": "Oliver Daniel",
-                "company": "ТС",
-                "customer_id": 15,
-                "customer_name": "quo voluptas porro",
-                "project_id": 16,
-                "project_name": "est voluptas voluptates",
-                "total_hours": 2.2
-            },
-            {
-                "nick": "sterling03",
-                "name": "Oliver Daniel",
-                "company": "ТС",
-                "customer_id": 23,
-                "customer_name": "non aut nisi",
-                "project_id": 30,
-                "project_name": "assumenda et sequi",
-                "total_hours": 1.6
+                "nick": "ilene.wolf",
+                "name": "Vickie Jerde",
+                "company": "Р",
+                "customer_id": 2,
+                "customer_name": "dolorem aut nostrum",
+                "project_id": 2,
+                "project_name": "voluptas quas labore",
+                "total_hours": 1.8
             }
         ]
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h3>Schedule</h3>
+
+			<h4>Official schedule</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Getting a short report on hours from employees for a certain period of days.
+			</p>
+			<p>
+				Request: GET api/shedule/official.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/shedule/official" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "data": {
+        "2010-10-07": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-08": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-09": {
+            "status": "work",
+            "info": []
+        }
+    }
+}</pre>
+				<div class="code-label">Example response (200)</div>
+			</div>
+
+			<h4>Workers schedule</h4>
+			<p>
+				<b>Requires authentication.</b>
+			</p>
+			<p>
+				Getting the workers schedule for the period requested with his worked hours by days.
+			</p>
+			<p>
+				Request: GET api/shedule/worker.
+			</p>
+			<p>
+				Body Parameters:
+			</p>
+			<ol>
+				<li>
+					start_date  string optional — Start date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+				<li>
+					end_date  string optional — End date of the reporting
+					period. Inclusive. Must be a valid date.
+				</li>
+			</ol>
+			<div class="img">
+				<pre>curl --request GET \
+    --get "http://localhost/api/shedule/worker" \
+    --header "X-Auth-Key: {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"start_date\": \"2010-10-07\",
+    \"end_date\": \"2010-10-09\"
+}"</pre>
+				<div class="code-label">Example request</div>
+			</div>
+			<div class="img">
+				<pre>{
+    "ilene.wolf": {
+        "2010-10-07": {
+            "status": "holiday",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui."
+            ]
+        },
+        "2010-10-08": {
+            "status": "work",
+            "info": [
+                "Error possimus maiores eius est sit molestiae qui qui.",
+                "Provident delectus et atque sequi."
+            ],
+            "total_hours": 5
+        },
+        "2010-10-09": {
+            "status": "work",
+            "info": []
+        }
     }
 }</pre>
 				<div class="code-label">Example response (200)</div>

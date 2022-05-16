@@ -2,13 +2,14 @@
 
 use App\Http\Actions\ReportHours\ActionShowReportHours;
 use App\Http\Actions\ReportHours\ActionShowReportHoursByProject;
+use App\Http\Actions\Sсhedule\ActionScheduleOfficial;
+use App\Http\Actions\Sсhedule\ActionWorkersSchedule;
 use App\Http\Actions\Token\Create\ActionCreateToken;
 use App\Http\Actions\Token\Delete\ActionDeleteOneToken;
 use App\Http\Actions\Token\Read\ActionReadAllTokens;
 use App\Http\Actions\Token\Read\ActionReadOneToken;
 use App\Http\Actions\Token\Update\ActionUpdateOneToken;
 use App\Http\Actions\User\ActionLogin;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,4 +34,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::get('report/hours/short', ActionShowReportHours::class);
     Route::get('report/hours/project', ActionShowReportHoursByProject::class);
+
+    Route::get('shedule/official', ActionScheduleOfficial::class);
+    Route::get('shedule/worker', ActionWorkersSchedule::class);
 });

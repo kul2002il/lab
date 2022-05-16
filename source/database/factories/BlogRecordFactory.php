@@ -19,8 +19,8 @@ class BlogRecordFactory extends Factory
     public function definition()
     {
         return [
-            'blog_id' => DailyBlog::all()->random()->id,
-            'project_id' => Project::all()->random()->id,
+            'blog_id' => DailyBlog::factory(),
+            'project_id' => Project::factory(),
             'time' => rand(0,100)/10,
             'type' => $this->faker->randomElement([
                 'Bug Fixing',

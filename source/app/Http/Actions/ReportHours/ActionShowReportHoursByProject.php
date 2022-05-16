@@ -9,16 +9,16 @@ use App\Models\ReportHours;
 class ActionShowReportHoursByProject
 {
     /**
-     * Отчёт по проектам
+     * Report hours by project
      *
-     * Получение отчёта о часах сотрудников по проектам за определённый период
-     * дней.
+     * Getting a report on hours from employees ordered by project
+     * for a certain period of days.
      *
-     * Если на одном проекте работало несколько сотрудников, то создаётся
-     * несколько записей в массиве `reports` с одинаковым значением полей,
-     * относящихся к проекту.
+     * If several employees worked on one project, then several records
+     * are created in the `reports` array with the same value of the fields
+     * related to the project.
      *
-     * @group Отчёт по часам
+     * @group Report hours
      */
     function __invoke(GetByStartEndDateRequest $request) {
         $report = new ReportHours(

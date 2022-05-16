@@ -23,11 +23,11 @@ class GetByStartEndDateRequest extends BaseRequest
     {
         return [
             'start_date' => [
-                'description' => 'Дата начала периода отчёта. Включительно.',
+                'description' => 'Start date of the reporting period. Inclusive.',
                 'example' => '2001-10-08',
             ],
             'end_date' => [
-                'description' => 'Дата конца периода отчёта. Включительно.',
+                'description' => 'End date of the reporting period. Inclusive.',
                 'example' => '2016-10-08',
             ],
         ];
